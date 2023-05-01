@@ -1,0 +1,57 @@
+inherited fmfActionList: TfmfActionList
+  Caption = #1043#1086#1088#1103#1095#1080#1077' '#1082#1083#1072#1074#1080#1096#1080
+  ClientWidth = 372
+  OnKeyDown = FormKeyDown
+  DesignerMasterStyle = 0
+  object Panel1: TPanel [0]
+    Align = Bottom
+    Position.Y = 448.000000000000000000
+    Size.Width = 372.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    object buSet: TButton
+      Anchors = [akTop, akRight]
+      Default = True
+      Position.X = 208.000000000000000000
+      Position.Y = 4.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = #1059#1089#1090#1072#1085#1086#1074#1080#1090#1100
+      OnClick = buSetClick
+    end
+  end
+  object edAction: TEdit [1]
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Align = Bottom
+    TabOrder = 5
+    Position.Y = 426.000000000000000000
+    Size.Width = 372.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object grAction: TGrid [2]
+    Align = Client
+    CanFocus = True
+    ClipChildren = True
+    Size.Width = 372.000000000000000000
+    Size.Height = 426.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    Viewport.Width = 352.000000000000000000
+    Viewport.Height = 401.000000000000000000
+    object clImage: TColumn
+      Size.Width = 41.000000000000000000
+    end
+    object alShortCut: TColumn
+      Header = #1050#1083#1072#1074#1080#1096#1080
+      Size.Width = 119.000000000000000000
+    end
+    object clAction: TColumn
+      Header = #1044#1077#1081#1089#1090#1074#1080#1077
+      Size.Width = 183.000000000000000000
+    end
+  end
+end

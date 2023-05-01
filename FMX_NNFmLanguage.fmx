@@ -1,0 +1,179 @@
+inherited fmfLanguage: TfmfLanguage
+  Caption = #1056#1077#1076#1072#1082#1090#1086#1088' '#1103#1079#1099#1082#1086#1074' '#1080' '#1087#1077#1088#1077#1074#1086#1076#1072
+  DesignerMasterStyle = 0
+  inherited paT: TPanel
+    inherited tcDB: TTabControl
+      Sizes = (
+        904s
+        31s
+        904s
+        31s)
+      inherited tiDB: TTabItem
+        ExplicitSize.cx = 89.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+      end
+      inherited tiSetup: TTabItem
+        ExplicitSize.cx = 69.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+        inherited ToolBar1: TToolBar
+          object cbLanguageOwner: TComboBox
+            Position.X = 8.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 161.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+          end
+          object SpeedButton1: TSpeedButton
+            Action = aPrepareOwnerWords
+            Enabled = True
+            ImageIndex = 25
+            Position.X = 168.000000000000000000
+            Position.Y = 4.000000000000000000
+          end
+        end
+      end
+    end
+  end
+  object paL: TPanel [2]
+    Align = Left
+    Position.Y = 57.000000000000000000
+    Size.Width = 305.000000000000000000
+    Size.Height = 695.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 12
+    object grLanguageKind: TGrid
+      Align = Client
+      CanFocus = True
+      ClipChildren = True
+      Size.Width = 305.000000000000000000
+      Size.Height = 558.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 13
+      Viewport.Width = 301.000000000000000000
+      Viewport.Height = 533.000000000000000000
+    end
+    object grLanguages: TGrid
+      Align = Top
+      CanFocus = True
+      ClipChildren = True
+      Size.Width = 305.000000000000000000
+      Size.Height = 121.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 12
+      Viewport.Width = 285.000000000000000000
+      Viewport.Height = 80.000000000000000000
+      object clLanguagesLanguagesID: TColumn
+        Size.Width = 73.000000000000000000
+      end
+      object clLanguagesLanguagesStringID: TColumn
+        Size.Width = 127.000000000000000000
+      end
+      object clLanguagesLanguages: TColumn
+      end
+    end
+    object splLanguages: TSplitter
+      Align = Top
+      Cursor = crVSplit
+      MinSize = 20.000000000000000000
+      Position.Y = 121.000000000000000000
+      Size.Width = 305.000000000000000000
+      Size.Height = 16.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object splLanguageKind: TSplitter [3]
+    Align = Left
+    Cursor = crHSplit
+    MinSize = 20.000000000000000000
+    Position.X = 305.000000000000000000
+    Position.Y = 57.000000000000000000
+    Size.Width = 16.000000000000000000
+    Size.Height = 695.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object paC: TPanel [4]
+    Align = Client
+    Size.Width = 864.000000000000000000
+    Size.Height = 695.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 14
+    object paCB: TPanel
+      Align = Bottom
+      Position.Y = 384.000000000000000000
+      Size.Width = 864.000000000000000000
+      Size.Height = 311.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object grTranslate: TGrid
+        Align = Client
+        CanFocus = True
+        ClipChildren = True
+        Size.Width = 864.000000000000000000
+        Size.Height = 311.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Viewport.Width = 860.000000000000000000
+        Viewport.Height = 286.000000000000000000
+      end
+    end
+    object splTranslate: TSplitter
+      Align = Bottom
+      Cursor = crVSplit
+      MinSize = 20.000000000000000000
+      Position.Y = 368.000000000000000000
+      Size.Width = 864.000000000000000000
+      Size.Height = 16.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Panel1: TPanel
+      Align = Client
+      Size.Width = 864.000000000000000000
+      Size.Height = 368.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object grLanguage: TGrid
+        Align = Client
+        CanFocus = True
+        ClipChildren = True
+        Size.Width = 864.000000000000000000
+        Size.Height = 368.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Viewport.Width = 860.000000000000000000
+        Viewport.Height = 343.000000000000000000
+      end
+    end
+  end
+  inherited coRes: TNNFConfig
+    StoreKind = skFile
+    OnEndLoad = coResEndLoad
+  end
+  inherited alRes: TNNFActionList
+    object aPrepareOwnerWords: TAction
+      Text = #1055#1086#1076#1075#1086#1090#1086#1074#1080#1090#1100' '#1089#1083#1086#1074#1072
+      Hint = #1055#1086#1076#1075#1086#1090#1086#1074#1080#1090#1100' '#1089#1083#1086#1074#1072
+      ImageIndex = 25
+      OnExecute = aPrepareOwnerWordsExecute
+      ImageIndex = 25
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSource = dmfNewNavadvipa.dsLanguage
+    ScopeMappings = <>
+    Left = 576
+    Top = 376
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = grLanguage
+      Columns = <>
+    end
+  end
+end

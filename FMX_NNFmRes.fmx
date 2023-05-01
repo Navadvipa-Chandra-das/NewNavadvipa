@@ -1,0 +1,35 @@
+object fmfRes: TfmfRes
+  Left = 0
+  Top = 0
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+  object coRes: TNNFConfig
+    OnLoad = coResLoad
+    OnSave = coResSave
+    Left = 72
+    Top = 16
+  end
+  object fbRes: TNNFFlagBox
+    Left = 40
+    Top = 16
+  end
+  object rrRes: TNNFRight
+    Left = 104
+    Top = 16
+  end
+  object lnRes: TNNFLanguage
+    Left = 136
+    Top = 16
+  end
+  object alRes: TNNFActionList
+    Left = 168
+    Top = 16
+  end
+end

@@ -1,0 +1,3629 @@
+inherited fmfPrabhupadaSlovar: TfmfPrabhupadaSlovar
+  ActiveControl = grPrabhupadaSlovar
+  Caption = #1057#1083#1086#1074#1072#1088#1100' '#1064#1088#1080#1083#1099' '#1055#1088#1072#1073#1093#1091#1087#1072#1076#1099
+  ClientWidth = 320
+  DesignerMasterStyle = 0
+  object laT: TLayout [0]
+    Align = Top
+    Size.Width = 320.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object tbrPrabhupadaSlovar: TToolBar
+      Size.Width = 320.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object sbSearch: TSpeedButton
+        Action = aSearch
+        Align = Left
+        Enabled = True
+        Images = ilPrabhupadaSlovar
+        ImageIndex = 27
+        Size.Width = 40.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+        TextSettings.WordWrap = True
+        TextSettings.Trimming = None
+      end
+      object sbCaseSensitive: TSpeedButton
+        StaysPressed = True
+        Align = Left
+        Hint = #1059#1095#1080#1090#1099#1074#1072#1090#1100' '#1088#1077#1075#1080#1089#1090#1088
+        Images = ilPrabhupadaSlovar
+        ImageIndex = 24
+        Position.X = 40.000000000000000000
+        Size.Width = 40.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+        TextSettings.WordWrap = True
+        TextSettings.Trimming = None
+        OnClick = aCaseSensitiveExecute
+      end
+      object sbDelete: TSpeedButton
+        Action = aDelete
+        Align = Left
+        Enabled = True
+        Images = ilPrabhupadaSlovar
+        ImageIndex = 50
+        Position.X = 80.000000000000000000
+        Size.Width = 40.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+        TextSettings.WordWrap = True
+        TextSettings.Trimming = None
+      end
+      object sbInsert: TSpeedButton
+        Action = aInsert
+        Align = Left
+        Enabled = True
+        Images = ilPrabhupadaSlovar
+        ImageIndex = 49
+        Position.X = 120.000000000000000000
+        Size.Width = 40.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+        TextSettings.WordWrap = True
+        TextSettings.Trimming = None
+      end
+      object sbRemoveDuplicates: TSpeedButton
+        Action = aRemoveDuplicates
+        Align = Left
+        Enabled = True
+        Images = ilPrabhupadaSlovar
+        ImageIndex = 41
+        Position.X = 160.000000000000000000
+        Size.Width = 40.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+        TextSettings.WordWrap = True
+        TextSettings.Trimming = None
+      end
+      object sbAbout: TSpeedButton
+        Action = aAbout
+        Align = Left
+        Enabled = True
+        Images = ilPrabhupadaSlovar
+        ImageIndex = 173
+        Position.X = 200.000000000000000000
+        Size.Width = 40.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+        TextSettings.WordWrap = True
+        TextSettings.Trimming = None
+      end
+    end
+  end
+  object laTComboBox: TLayout [1]
+    Align = Top
+    Position.Y = 48.000000000000000000
+    Size.Width = 320.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    object cbOrderBy: TComboBox
+      Align = Left
+      Items.Strings = (
+        #1057#1072#1085#1089#1082#1088#1080#1090' '#1074#1086#1079#1088#1072#1089#1090#1072#1085#1080#1077
+        #1057#1072#1085#1089#1082#1088#1080#1090' '#1091#1073#1099#1074#1072#1085#1080#1077
+        #1055#1077#1088#1077#1074#1086#1076' '#1074#1086#1079#1088#1072#1089#1090#1072#1085#1080#1077
+        #1055#1077#1088#1077#1074#1086#1076' '#1091#1073#1099#1074#1072#1085#1080#1077)
+      Position.X = 150.000000000000000000
+      Size.Width = 170.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      TabStop = False
+      OnChange = cbOrderByChange
+    end
+    object cbYazyk: TComboBox
+      Align = Left
+      Hint = #1071#1079#1099#1082
+      Size.Width = 150.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      TabStop = False
+      OnChange = cbYazykChange
+    end
+  end
+  object laTEdit: TLayout [2]
+    Align = Top
+    Position.Y = 80.000000000000000000
+    Size.Width = 320.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object sbFontSize: TSpinBox
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Left
+      TabOrder = 1
+      TabStop = False
+      Cursor = crIBeam
+      Min = 14.000000000000000000
+      Max = 24.000000000000000000
+      Value = 14.000000000000000000
+      Hint = #1056#1072#1079#1084#1077#1088' '#1096#1088#1080#1092#1090#1072
+      Size.Width = 92.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      OnChange = sbFontSizeChange
+    end
+    object edInfo: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Left
+      TabOrder = 2
+      TabStop = False
+      ReadOnly = True
+      Position.X = 92.000000000000000000
+      Hint = #1058#1077#1082#1091#1097#1072#1103' '#1089#1090#1088#1086#1082#1072' / '#1042#1089#1077#1075#1086' '#1089#1090#1088#1086#1082
+      Size.Width = 108.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object cbLanguage: TComboBox
+      Align = Left
+      Hint = #1071#1079#1099#1082
+      Position.X = 200.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      TabStop = False
+      OnChange = cbLanguageChange
+    end
+  end
+  object laB: TLayout [3]
+    Align = Bottom
+    Position.Y = 430.000000000000000000
+    Size.Width = 320.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object edSanskrit: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Left
+      TabOrder = 0
+      TextSettings.Font.Family = 'Gaura Times'
+      TextSettings.Font.Size = 14.000000000000000000
+      Hint = #1055#1086#1080#1089#1082' '#1087#1086' '#1089#1072#1085#1089#1082#1088#1080#1090#1091
+      Size.Width = 152.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      StyledSettings = [Style, FontColor]
+      OnKeyDown = SanskritPerevodKeyDown
+    end
+    object splSanskritPerevod: TSplitter
+      Align = Left
+      Cursor = crHSplit
+      MinSize = 20.000000000000000000
+      Position.X = 152.000000000000000000
+      Size.Width = 16.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object edPerevod: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Client
+      TabOrder = 2
+      TextSettings.Font.Family = 'Gaura Times'
+      TextSettings.Font.Size = 14.000000000000000000
+      Hint = #1055#1086#1080#1089#1082' '#1087#1086' '#1087#1077#1088#1077#1074#1086#1076#1091
+      Size.Width = 152.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      StyledSettings = [Style, FontColor]
+      OnKeyDown = SanskritPerevodKeyDown
+    end
+    object Layout3D1: TLayout3D
+      Height = 4.000000000000000000
+      Width = 5.000000000000000000
+    end
+  end
+  object laC: TLayout [4]
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 318.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object grPrabhupadaSlovar: TGrid
+      Align = Client
+      CanFocus = True
+      ClipChildren = True
+      Size.Width = 320.000000000000000000
+      Size.Height = 318.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Gaura Times'
+      TextSettings.Font.Size = 14.000000000000000000
+      StyledSettings = [Style, FontColor]
+      TabOrder = 0
+      RowCount = 0
+      Options = [Editing, ColumnResize, ColumnMove, ColLines, RowLines, AlwaysShowSelection, Header, HeaderClick, AutoDisplacement]
+      OnHeaderClick = grPrabhupadaSlovarHeaderClick
+      OnSelChanged = grPrabhupadaSlovarSelChanged
+      OnGetValue = grPrabhupadaSlovarGetValue
+      OnSetValue = grPrabhupadaSlovarSetValue
+      Viewport.Width = 316.000000000000000000
+      Viewport.Height = 293.000000000000000000
+      object scSanskrit: TStringColumn
+        Header = #1057#1072#1085#1089#1082#1088#1080#1090
+        Size.Width = 145.000000000000000000
+      end
+      object skPerevod: TStringColumn
+        Tag = 1
+        Header = #1055#1077#1088#1077#1074#1086#1076
+        Size.Width = 145.000000000000000000
+      end
+    end
+  end
+  object mmPrabupadaSlovar: TMainMenu [5]
+    Images = ilPrabhupadaSlovar
+    Left = 56
+    Top = 196
+    object miAction: TMenuItem
+      Text = '&'#1044#1077#1081#1089#1090#1074#1080#1077
+      object miSearch: TMenuItem
+        Action = aSearch
+        Enabled = True
+        Locked = True
+        ImageIndex = 27
+      end
+      object miCaseSensitive: TMenuItem
+        Action = aCaseSensitive
+        Enabled = True
+        Locked = True
+        ImageIndex = 24
+      end
+      object miDelete: TMenuItem
+        Action = aDelete
+        Enabled = True
+        Locked = True
+        ImageIndex = 50
+      end
+      object miInsert: TMenuItem
+        Action = aInsert
+        Enabled = True
+        Locked = True
+        ImageIndex = 49
+      end
+      object miRemoveDuplicates: TMenuItem
+        Action = aRemoveDuplicates
+        Enabled = True
+        Locked = True
+        ImageIndex = 41
+      end
+      object MenuItem1: TMenuItem
+        Action = aLanguageEdit
+        Enabled = True
+        Locked = True
+        ImageIndex = 147
+      end
+    end
+    object miSetBookmark: TMenuItem
+      Text = '&'#1059#1089#1090#1072#1085#1086#1074#1080#1090#1100' '#1079#1072#1082#1083#1072#1076#1082#1091
+      object mipSetBookmark0: TMenuItem
+        Action = aSetBookmark0
+        Enabled = True
+        Locked = True
+        ImageIndex = -1
+      end
+      object mipSetBookmark1: TMenuItem
+        Action = aSetBookmark1
+        Enabled = True
+        Locked = True
+        ImageIndex = -1
+      end
+      object mipSetBookmark2: TMenuItem
+        Action = aSetBookmark2
+        Enabled = True
+        Locked = True
+        ImageIndex = -1
+      end
+      object mipSetBookmark3: TMenuItem
+        Action = aSetBookmark3
+        Enabled = True
+        Locked = True
+        ImageIndex = -1
+      end
+      object mipSetBookmark4: TMenuItem
+        Action = aSetBookmark4
+        Enabled = True
+        Locked = True
+        ImageIndex = -1
+      end
+      object mipSetBookmark5: TMenuItem
+        Action = aSetBookmark5
+        Enabled = True
+        Locked = True
+        ImageIndex = -1
+      end
+      object mipSetBookmark6: TMenuItem
+        Action = aSetBookmark6
+        Enabled = True
+        Locked = True
+        ImageIndex = -1
+      end
+      object mipSetBookmark7: TMenuItem
+        Action = aSetBookmark7
+        Enabled = True
+        Locked = True
+        ImageIndex = -1
+      end
+      object mipSetBookmark8: TMenuItem
+        Action = aSetBookmark8
+        Enabled = True
+        Locked = True
+        ImageIndex = -1
+      end
+      object mipSetBookmark9: TMenuItem
+        Action = aSetBookmark9
+        Enabled = True
+        Locked = True
+        ImageIndex = -1
+      end
+    end
+    object miGoToBookmark: TMenuItem
+      Text = '&'#1055#1077#1088#1077#1081#1090#1080' '#1082' '#1079#1072#1082#1083#1072#1076#1082#1077
+      object mipGoToBookmark0: TMenuItem
+        Action = aGoToBookmark0
+        Enabled = True
+        Locked = True
+        ImageIndex = -1
+      end
+      object mipGoToBookmark1: TMenuItem
+        Action = aGoToBookmark1
+        Enabled = True
+        Locked = True
+        ImageIndex = -1
+      end
+      object mipGoToBookmark2: TMenuItem
+        Action = aGoToBookmark2
+        Enabled = True
+        Locked = True
+        ImageIndex = -1
+      end
+      object mipGoToBookmark3: TMenuItem
+        Action = aGoToBookmark3
+        Enabled = True
+        Locked = True
+        ImageIndex = -1
+      end
+      object mipGoToBookmark4: TMenuItem
+        Action = aGoToBookmark4
+        Enabled = True
+        Locked = True
+        ImageIndex = -1
+      end
+      object mipGoToBookmark5: TMenuItem
+        Action = aGoToBookmark5
+        Enabled = True
+        Locked = True
+        ImageIndex = -1
+      end
+      object mipGoToBookmark6: TMenuItem
+        Action = aGoToBookmark6
+        Enabled = True
+        Locked = True
+        ImageIndex = -1
+      end
+      object mipGoToBookmark7: TMenuItem
+        Action = aGoToBookmark7
+        Enabled = True
+        Locked = True
+        ImageIndex = -1
+      end
+      object mipGoToBookmark8: TMenuItem
+        Action = aGoToBookmark8
+        Enabled = True
+        Locked = True
+        ImageIndex = -1
+      end
+      object mipGoToBookmark9: TMenuItem
+        Action = aGoToBookmark9
+        Enabled = True
+        Locked = True
+        ImageIndex = -1
+      end
+    end
+  end
+  inherited coRes: TNNFConfig
+    StoreKind = skFile
+    OnDefault = coResDefault
+    OnEndLoad = coResEndLoad
+    Connection = dmfNewNavadvipa.conDB
+    Left = 21
+    Top = 149
+  end
+  inherited fbRes: TNNFFlagBox
+    Left = 16
+    Top = 256
+  end
+  inherited rrRes: TNNFRight
+    Left = 80
+    Top = 256
+  end
+  inherited lnRes: TNNFLanguage
+    Left = 112
+    Top = 256
+  end
+  inherited alRes: TNNFActionList
+    Left = 28
+    Top = 196
+  end
+  object quPrabhupadaSlovar: TNNFQuery
+    Connection = dmfNewNavadvipa.conDB
+    FetchOptions.AssignedValues = [evUnidirectional, evCursorKind]
+    FetchOptions.CursorKind = ckForwardOnly
+    FetchOptions.Unidirectional = True
+    SQL.Strings = (
+      'select'
+      '  a."ID"'
+      ', a."IZNACHALYNO"'
+      ', a."PEREVOD"'
+      'from'
+      '    &PRABHUPADA_SCHEMA"SANSKRIT" a'
+      'where'
+      '  a."YAZYK" = :YAZYK;')
+    Left = 162
+    Top = 150
+    ParamData = <
+      item
+        Name = 'YAZYK'
+        DataType = ftString
+        ParamType = ptInput
+        Value = 'RU-RU'
+      end>
+    MacroData = <
+      item
+        Value = '"NewNavadvipa".'
+        Name = 'PRABHUPADA_SCHEMA'
+      end>
+    object quPrabhupadaSlovarID: TIntegerField
+      FieldName = 'ID'
+      Origin = 'ID'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+    end
+    object quPrabhupadaSlovarIZNACHALYNO: TWideMemoField
+      FieldName = 'IZNACHALYNO'
+      Origin = 'IZNACHALYNO'
+      BlobType = ftWideMemo
+    end
+    object quPrabhupadaSlovarPEREVOD: TWideMemoField
+      FieldName = 'PEREVOD'
+      Origin = 'PEREVOD'
+      BlobType = ftWideMemo
+    end
+  end
+  object quYazyk: TNNFQuery
+    Connection = dmfNewNavadvipa.conDB
+    SQL.Strings = (
+      'select'
+      '  a."ID"'
+      ', a."YAZYK"'
+      ', a."YAZYK_SLOVO"'
+      'from'
+      '    &PRABHUPADA_SCHEMA"YAZYK" a'
+      'order by a."YAZYK_SLOVO";')
+    Left = 134
+    Top = 149
+    MacroData = <
+      item
+        Value = '"NewNavadvipa".'
+        Name = 'PRABHUPADA_SCHEMA'
+      end>
+    object quYazykID: TIntegerField
+      FieldName = 'ID'
+      Origin = 'ID'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+    end
+    object quYazykYAZYK: TWideMemoField
+      FieldName = 'YAZYK'
+      Origin = 'YAZYK'
+      BlobType = ftWideMemo
+    end
+    object quYazykYAZYK_SLOVO: TWideMemoField
+      FieldName = 'YAZYK_SLOVO'
+      Origin = 'YAZYK_SLOVO'
+      BlobType = ftWideMemo
+    end
+  end
+  object alPrabhupadaSlovar: TActionList
+    Images = ilPrabhupadaSlovar
+    Left = 191
+    Top = 149
+    object aSearch: TAction
+      Category = 'Action'
+      Text = #1053#1072#1081#1090#1080
+      Hint = #1053#1072#1081#1090#1080
+      ImageIndex = 27
+      ShortCut = 16397
+      OnExecute = aSearchExecute
+      ImageIndex = 27
+    end
+    object aCaseSensitive: TAction
+      Category = 'Action'
+      Text = #1059#1095#1080#1090#1099#1074#1072#1090#1100' '#1088#1077#1075#1080#1089#1090#1088
+      Hint = #1059#1095#1080#1090#1099#1074#1072#1090#1100' '#1088#1077#1075#1080#1089#1090#1088
+      ImageIndex = 24
+      OnExecute = aCaseSensitiveExecute
+      ImageIndex = 24
+    end
+    object aDelete: TAction
+      Category = 'Action'
+      Text = #1059#1076#1072#1083#1080#1090#1100
+      Hint = #1059#1076#1072#1083#1080#1090#1100
+      ImageIndex = 50
+      ShortCut = 16430
+      OnExecute = aDeleteExecute
+      ImageIndex = 50
+    end
+    object aInsert: TAction
+      Category = 'Action'
+      Text = #1044#1086#1073#1072#1074#1080#1090#1100
+      Hint = #1044#1086#1073#1072#1074#1080#1090#1100
+      ImageIndex = 49
+      ShortCut = 16429
+      OnExecute = aInsertExecute
+      ImageIndex = 49
+    end
+    object aRemoveDuplicates: TAction
+      Category = 'Action'
+      Text = #1059#1076#1072#1083#1080#1090#1100' '#1076#1091#1073#1083#1080#1082#1072#1090#1099
+      Hint = #1059#1076#1072#1083#1080#1090#1100' '#1076#1091#1073#1083#1080#1082#1072#1090#1099
+      ImageIndex = 41
+      OnExecute = aRemoveDuplicatesExecute
+      ImageIndex = 41
+    end
+    object aSetBookmark0: TAction
+      Category = 'Bookmark'
+      Text = #1059#1089#1090#1072#1085#1086#1074#1080#1090#1100' '#1079#1072#1082#1083#1072#1076#1082#1091' 0'
+      ShortCut = 24624
+      OnExecute = aSetBookmark0Execute
+    end
+    object aSetBookmark1: TAction
+      Category = 'Bookmark'
+      Text = #1059#1089#1090#1072#1085#1086#1074#1080#1090#1100' '#1079#1072#1082#1083#1072#1076#1082#1091' 1'
+      ShortCut = 24625
+      OnExecute = aSetBookmark1Execute
+    end
+    object aSetBookmark2: TAction
+      Category = 'Bookmark'
+      Text = #1059#1089#1090#1072#1085#1086#1074#1080#1090#1100' '#1079#1072#1082#1083#1072#1076#1082#1091' 2'
+      ShortCut = 24626
+      OnExecute = aSetBookmark2Execute
+    end
+    object aSetBookmark3: TAction
+      Category = 'Bookmark'
+      Text = #1059#1089#1090#1072#1085#1086#1074#1080#1090#1100' '#1079#1072#1082#1083#1072#1076#1082#1091' 3'
+      ShortCut = 24627
+      OnExecute = aSetBookmark3Execute
+    end
+    object aSetBookmark4: TAction
+      Category = 'Bookmark'
+      Text = #1059#1089#1090#1072#1085#1086#1074#1080#1090#1100' '#1079#1072#1082#1083#1072#1076#1082#1091' 4'
+      ShortCut = 24628
+      OnExecute = aSetBookmark4Execute
+    end
+    object aSetBookmark5: TAction
+      Category = 'Bookmark'
+      Text = #1059#1089#1090#1072#1085#1086#1074#1080#1090#1100' '#1079#1072#1082#1083#1072#1076#1082#1091' 5'
+      ShortCut = 24629
+      OnExecute = aSetBookmark5Execute
+    end
+    object aSetBookmark6: TAction
+      Category = 'Bookmark'
+      Text = #1059#1089#1090#1072#1085#1086#1074#1080#1090#1100' '#1079#1072#1082#1083#1072#1076#1082#1091' 6'
+      ShortCut = 24630
+      OnExecute = aSetBookmark6Execute
+    end
+    object aSetBookmark7: TAction
+      Category = 'Bookmark'
+      Text = #1059#1089#1090#1072#1085#1086#1074#1080#1090#1100' '#1079#1072#1082#1083#1072#1076#1082#1091' 7'
+      ShortCut = 24631
+      OnExecute = aSetBookmark7Execute
+    end
+    object aSetBookmark8: TAction
+      Category = 'Bookmark'
+      Text = #1059#1089#1090#1072#1085#1086#1074#1080#1090#1100' '#1079#1072#1082#1083#1072#1076#1082#1091' 8'
+      ShortCut = 24632
+      OnExecute = aSetBookmark8Execute
+    end
+    object aSetBookmark9: TAction
+      Category = 'Bookmark'
+      Text = #1059#1089#1090#1072#1085#1086#1074#1080#1090#1100' '#1079#1072#1082#1083#1072#1076#1082#1091' 9'
+      ShortCut = 24633
+      OnExecute = aSetBookmark9Execute
+    end
+    object aGoToBookmark0: TAction
+      Category = 'Bookmark'
+      Text = #1055#1077#1088#1077#1081#1090#1080' '#1082' '#1079#1072#1082#1083#1072#1076#1082#1077' 0'
+      ShortCut = 16432
+      OnExecute = aGoToBookmark0Execute
+    end
+    object aGoToBookmark1: TAction
+      Category = 'Bookmark'
+      Text = #1055#1077#1088#1077#1081#1090#1080' '#1082' '#1079#1072#1082#1083#1072#1076#1082#1077' 1'
+      ShortCut = 16433
+      OnExecute = aGoToBookmark1Execute
+    end
+    object aGoToBookmark2: TAction
+      Category = 'Bookmark'
+      Text = #1055#1077#1088#1077#1081#1090#1080' '#1082' '#1079#1072#1082#1083#1072#1076#1082#1077' 2'
+      ShortCut = 16434
+      OnExecute = aGoToBookmark2Execute
+    end
+    object aGoToBookmark3: TAction
+      Category = 'Bookmark'
+      Text = #1055#1077#1088#1077#1081#1090#1080' '#1082' '#1079#1072#1082#1083#1072#1076#1082#1077' 3'
+      ShortCut = 16435
+      OnExecute = aGoToBookmark3Execute
+    end
+    object aGoToBookmark4: TAction
+      Category = 'Bookmark'
+      Text = #1055#1077#1088#1077#1081#1090#1080' '#1082' '#1079#1072#1082#1083#1072#1076#1082#1077' 4'
+      ShortCut = 16436
+      OnExecute = aGoToBookmark4Execute
+    end
+    object aGoToBookmark5: TAction
+      Category = 'Bookmark'
+      Text = #1055#1077#1088#1077#1081#1090#1080' '#1082' '#1079#1072#1082#1083#1072#1076#1082#1077' 5'
+      ShortCut = 16437
+      OnExecute = aGoToBookmark5Execute
+    end
+    object aGoToBookmark6: TAction
+      Category = 'Bookmark'
+      Text = #1055#1077#1088#1077#1081#1090#1080' '#1082' '#1079#1072#1082#1083#1072#1076#1082#1077' 6'
+      ShortCut = 16438
+      OnExecute = aGoToBookmark6Execute
+    end
+    object aGoToBookmark7: TAction
+      Category = 'Bookmark'
+      Text = #1055#1077#1088#1077#1081#1090#1080' '#1082' '#1079#1072#1082#1083#1072#1076#1082#1077' 7'
+      ShortCut = 16439
+      OnExecute = aGoToBookmark7Execute
+    end
+    object aGoToBookmark8: TAction
+      Category = 'Bookmark'
+      Text = #1055#1077#1088#1077#1081#1090#1080' '#1082' '#1079#1072#1082#1083#1072#1076#1082#1077' 8'
+      ShortCut = 16440
+      OnExecute = aGoToBookmark8Execute
+    end
+    object aGoToBookmark9: TAction
+      Category = 'Bookmark'
+      Text = #1055#1077#1088#1077#1081#1090#1080' '#1082' '#1079#1072#1082#1083#1072#1076#1082#1077' 9'
+      ShortCut = 16441
+      OnExecute = aGoToBookmark9Execute
+    end
+    object aAbout: TAction
+      Category = 'Action'
+      Text = #1054' '#1087#1088#1086#1075#1088#1072#1084#1084#1077
+      Hint = #1054' '#1087#1088#1086#1075#1088#1072#1084#1084#1077
+      ImageIndex = 173
+      OnExecute = aAboutExecute
+      ImageIndex = 173
+    end
+    object aLanguageEdit: TAction
+      Category = 'Action'
+      Text = #1056#1077#1076#1072#1082#1090#1080#1088#1086#1074#1072#1090#1100' '#1103#1079#1099#1082#1080
+      Hint = #1056#1077#1076#1072#1082#1090#1080#1088#1086#1074#1072#1090#1100' '#1103#1079#1099#1082#1080
+      ImageIndex = 147
+      OnExecute = aLanguageEditExecute
+      ImageIndex = 147
+    end
+  end
+  object ilPrabhupadaSlovar: TImageList
+    Source = <
+      item
+        MultiResBitmap.Height = 240
+        MultiResBitmap.Width = 240
+        MultiResBitmap.LoadSize = 0
+        MultiResBitmap.TransparentColor = 536870912
+        MultiResBitmap = <
+          item
+            Width = 240
+            Height = 240
+            PNG = {
+              89504E470D0A1A0A0000000D49484452000000F0000000F008060000003E55E9
+              92000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              52C349444154785EED9DDB961B3792AEA579ABE99BE9B11FCB5EABEDB5E4C7B2
+              A7FBA6F76369C71F113F10880C20914C56A9A4E6470501C409874C30932C56E9
+              D3D7AF9FBE7E9AB0B28133FB8B92B335837D26DF0D3C37507EF9727DECBFFCF2
+              4B9C7725DF0B79BC557BA724B92D1A59E46A335ED50760AB64972A16B24B150B
+              D9A58A85DC85EB36CBF5F5CF3FFF3C084E6694B09B9BB2CA23484F9FBE88A07C
+              04C4FDE6F1947DC41BFE3ADF0736B0C6228EF1210F6545F6D98989DC8DAF58E5
+              D063BC2A45000E426C7FFA2F3C7DFEFCE9B3B6BA5145F4B00DF8818931118BFD
+              22CF95D03EC7ECF4CA126B356AD7591642BBD66ACC4EAF2CB1761D1D9755ACD0
+              E7829F7FFE7990848E4136B4B54AD0C31F52FE62CDB8022788976E166BFD43E4
+              77AB6AB9974712A84FF4EC3997C047A365B3CA55586621D360F9EBAFE62454E7
+              5E047688E60BED29E2846EE10B2EC70BF425B1AD73F2F5883E57D01C3E883696
+              3C28AE7DE373DFC19FC5A4C6E9E6B54D7A8E1D8843DFDB53B3C862EC5E3BC1A7
+              F4ECFE57D8E24B441C63310EBCE27A75E4A79F7E6A9B999BD7DB691CE8216EDE
+              4C3FA0191E5FF2F9B335BF7E95032E7594C0F4759E98236E3E4E4BA266FD4FE7
+              0EFE4092CE740E81763E14EB7C405CDBB8C511BE97E203CC43FFC37999F2A915
+              4ED86BF3726F1CE23F429D957D92096C5E15F529EA07414C079EC787A468921F
+              291E1E51865817E82988B150051A7BD07FF6D044566AE43943BF14E8CD3CD06E
+              99C5AAA53869196EA1558A5B6A01EEEDB6D9455344DD04BB5D16AF5309F906C4
+              E876FA59C95B60D7CD50FF95845BE8335A7FA1DFD3387110579707E285EC7FD6
+              06D29E63F6C17F406FA17740167F05D8E2ABBC987E1E5E342F825779BCE253FC
+              6A70055C31285BB0CF0AA831946BC3D04390D76DE795F4975FED6AF46B7D55FA
+              7CBCB5464FF1CA9B076AAFE6823C55B3C0ED32C686E36C3287B7D535B8FDCD60
+              CE27E78F5A31B22CA0CA39C1A739F6E93AB7D4C0DDABD6B816DFFA05B18E1C68
+              4366F9A03E8838C71801FE2D067493218318EC9AA4202A71456D60E382BC794B
+              3DDFD38C5DD6549BCB9B69C84ABCE503B90DDAD418CF3E725F52ADFBB0429F8F
+              E4A5544E624011D598C4A1A7B879E116D3B4CDABD831459B2BD08D5CA3BE817F
+              17DD6F5E1FF5B6E9DB2A2A92A977E4F8FBD7C16FC274CDB881FD7DF02C578B47
+              CCAC8E429F8F587CB44A7B237EE817CCDA916E3B1AF3E635173CE1ED0CEA8656
+              C5A86618CA150C3031D16469036393C62BF0AC7EBA81DBC9E2A40DC865AC86FC
+              D00606B14FF8CBBFD99278FC98D4D065B4F5748D30F15FBEF75B61EF0BD101CA
+              598EB3CD0B70FB6C57E0BC4619DBC0DCBC287F3B044877DA617E0F2C3DAE9323
+              5422E3C8D8BEB381239EFB347EF008798AF8B2CF5C27714CD423414C380424AC
+              33DFC4A88B40A762F6359E4345EA60786FABFA548FBA41100BA91E12165AC736
+              1E1E0F4B16552FDAA673993D426E54295DA79269F628D09BF980DAEC7D6F1579
+              14F5F53839B545445F8A3C05CC5FCB0474BFC1A3144BC3D8BD1F2D99BF1452E2
+              BD2BC5AC535A9F51A00FF1AB1C87B8896EC6E02B8E5DE6F1838DF528331FD4AD
+              DDE9ED75A9B152FE97EC64BC28AB88728B5FE5FDD915FFDBE42BF17B20B3D365
+              0A9C5D9D045D5A7D750C787B1A6CC74310C75FE4126347E728B031598BF9F4EB
+              24EFCE9597D815B5DF1E1F196DF0878C487F8A37672CED185D9647C148200FE7
+              8823DDC8C1BE1EE90F21BCBBB50D39963698581ADB1F622DF8DC6E8585F81E37
+              D609DF0B871F25D52F057AFB8AD988541BC7541AAFF3BB88C768FCD0BF697421
+              578478D24EDD185BF8957CC1E5C503F5C0A18CE289E003DF113736AE6C5E60B7
+              CF001B75B5910DFA1F3731FAAEF05BDF5330EC2C8F309BE92E2D3EF6BF919363
+              3E1C116943381FB7372F76633ED64269F9D0866B2C8D676CE053B091B17187F7
+              BF3B60E372F39E5FFD06F2D572E3EAA96B630BE6ED7D748DAB8386429F37691B
+              19C141A03B6EDC88F726DDD90137CE372F80ADDA8C84575CF3C15ADA075BC7F7
+              BF40BAD7018461B4F7B0C2621CDB84CC03EDC53C2E21C7E1B655FF657CEC6DD6
+              31606C05F2C5F5C868C7EEA469508ACEC6C041C4D278D6061EAEC215D8B86DF3
+              F6AB2FA9AFC233CC77885F2D5EC67D8778B4560BCC17009429BEED97185FF4B1
+              C5AF72A982206914EAD7A0573BF0D642A907FCC238C68DFCF933362AAFB8FD4A
+              5D21FD2DFB91E16F8D035928114C7FFD0DB4111C0FC8A30CF1210FD45E056DD6
+              F0E5B81917EBC4FD3DCAD0E38C3208402C6CE66E25FB03AD8AF86858817CE25B
+              795BBFB30B453FFF663D59BC3D1FE951CB789D6F4198DFB3E36D8D1DF79BF591
+              9158DBA0607D95B50D0EE0E7674ED18F1E21942261D4A7F0D3E8FEA323DBC015
+              F5D5D719D6E3193F4602D8BCF5B7CF0E1CF25C3F265E73182F6AB54833E62AC7
+              0D26AB9F62D3A7D0913A01941C0732784336A57FC2A97CF962974C7C6815A11E
+              FE5A393299CE7C9C89EF315E0F220FB43EEFA13F463ADBB8196C64FF7AE1A4AF
+              309A4BF44DDCC9EDE5E655704EA1778C627303CFD65CB9B07949CE77752DAEC6
+              4F37BD3ECFD10D7CC6FCC5FA041C08AF1E58D9FE4379743D10F7A8BC11D8C8FC
+              9111CB3705F9CFE4A3F3E878735C2527E065E08AD4507F56CEB81B1F81EF8E3C
+              85F167B37389773811B900C79F930E312EA7E0C87815E4F868FBF1E0DAF5351C
+              1065D3A31EDB3F06D5265DC911EAE444C4970BE6A54805F58FC667EA714759E7
+              A2BD920AFD058333819FB98FF8E61D246F76BE48CC5E04302B56AFF49DA0DF4A
+              DE92AABF2C2358BB2C0169681B25450DE7C02FCB152EC78B43F489719481F34F
+              A171EF7DFE560A89AFDF9F77EEC6EFB1379746BDE795C342DEC53F9B1A90F7B8
+              E70BDF37AD82CD2DA275BC67A400E8679BDF69534439ABA3D0E739B0EF4A44FB
+              3F13F8E933C066E5FBEB58864D8CA3CE92F50D100FDF2CBDEF350FC58B033F28
+              BB181FCFD2284C76D44744D37D599F952E91C1C6FAAC7439A31AB3C9D89E211E
+              47A847A95E9D78952B6572151C7C28E176BAE19BEF7005C66C4239ED67E32A8C
+              99A90FCA591DA5C88CE69FE3B2CE8544DD8E185CA75C4E10E3D2EE9CF9BCB95D
+              1C563E6A87ACAFC0BC5AC175131C9D9D72C6DD789EE4D60A3C3017804FFFF28F
+              37437B9D8C7D9DF73974C00FA4F326E615395F993144E9E2DAC426706A2867F5
+              0587C303FF1D9D80CC51D4672630EB73BCDA2E36B12834947555D6C0E6FD7B4F
+              47608FB65CBF1A1FD17871683FB28A40A70E269FE71BF8E448ADF0E4A5EC50C5
+              5166C48D5B9E45A49857888DA22057CCC7F6A18F0AF6B55E4B18918C4E9FE3ED
+              7475258E7038DEC45CF4961965B69DA0538258E3B4EE9A86B631D528958EB94E
+              68AF93391E0C6338B985060C675D95179105DA1BF984CBF1E22E011A831212E7
+              01FA4462727191DBADF6DE494333E36549C706D5CE183DF4A9F13861FFE0A50B
+              C007B962098E3A3C69FF5ED5D25CFAB79A32C14607DCA27A758EAF6995141D83
+              962F4E27FC1C95031D90E1305E91A1651F1DDFAA7F2E892E85336BDBD4FB98A2
+              0FC871C0639A3EE5A838E48D683CD6881BB62A0549316411E5B24F11B9A3B19E
+              E518375FE8425BFDAC7AAC5F8C8F0CF161915497E38F5760D8F3AA41D7E2CE81
+              E74C76A8E22805ED431BFCB60EA581B9E4B18FF3F3B5824F2C0DD82A99C117BD
+              59B9204F71FB4A8C21C914F5D0864305FF28710CD35C0F70580EF4BFA33B61B5
+              CC9C23BEC25BDF4287CD2B152E4BD3C5B2021B0578F3321EFE703C476CCFF5ED
+              34E81DE4E58A7D572B390E4EA2BFD9155803AA2B3053C11D7596C4D250872728
+              AC34DF6F7205B6B9F4F7B9F94A0C5ABC0C43372FAA3BFD93621C6165B6D17EAD
+              BA86EB6EEBDAEB28F4F9889E0A79F9A7B1DCB461F31209F1280D501B74AC27E0
+              3BC68793528E396DD16F565736E21BA2545F31345B8B97D0A0D7F8760596D371
+              9048B6657B06D699EC7088932715A957B4F51127FE3EED8CB67C03BA16A93490
+              BB9219F98A9BCB19BC8B406E7C4552DAECC4AEC42ED8CB225F216AB4CDABFCF5
+              D75F83A04F4AB655705A2829B37624DAA34F6C67FC38944743684B1CF35057C6
+              72D3A6CD0B4481101557A9CEAB19E8BD27039B8EB80AF6588FE5D57845143A45
+              513627E2A13A7EF888AAC5375F8986B2016F6464362E1E117D8B1564C1655B8B
+              727572131D4AE85B98C6C3952AD653BCC692F01D61F7D5EA90031C6D78B22BEF
+              0E1CAFC08847AFC0F6FE3D5C718BDC7A80BDDA10E39027F71F5F3426B6219E6B
+              62EB61CCDA363C8D8FCBAFAC72781CE8B5232D277E3799BF094642DF6F419C4D
+              D507EC591F7597E34511EF064EE33D81DACA4FA1C322570B7F0A5C67B243F3C7
+              93F48F32D6577CC19BC570F6A01A9A87B601856D5ED870B2AFCA15DC34B3B282
+              2F382BB00428E9F947B8AD26F90ACB4DCB32DB2B30BFD91A737DDC3EF1DA6215
+              3B6CDE5882BA6F446421B90D2A9D1275E803ED2CD5D8A9839D6CC78BE2523CFC
+              A582FAFC9B5879098046B2AB05709FC90ED137C6ECC4E30ACC5FB9E37867D2E9
+              9BF7AFBFFEFCF4D34FB8E5AC4BF39B8F246F9A5C56783E3C4975679646FE600B
+              7FFC9D02B85159667B422FFA5C9755FD513C769561983EAFBC2CCFE3E348F342
+              B23D5DE0A8671F28B3CC78D778A9E8263E6C604CBF9AE2E9F403B1B72C3B345F
+              E94B0F07FAF4FAAC7F6E5C5C817915AE04B7AB10D409F3EE6C5EF3C786F74622
+              5F717F92925281B12017C77703FD5BD1AB2B2C6D3EB672021C02CA59FD117CB9
+              EA4533CAE9E7DBE7C7C108D04379E062CF8F74F84DE2C5B14F46A6A649A8393B
+              50E2973BD2889D9330BFBF73A6F1794C295EDF4362D35E21BC57469EF3411B79
+              CC91873F8596F17F8DB7D15C83BC4EA2FD0A2F7CDC0525A62CD3C863D2E06A2C
+              7C5111720CD1AED16D5FEB63DD86D572B8F514FA57DCCCC111467C94C3E849A5
+              D331ACC678C6B78D9729E1E06D8B8755C076262B2AFF2C99CA67579E0236A114
+              A7E27E67C81A1BA89B4A2BFAE933CAAE9A025B961DAAB82C2F7E70AA830EB9CA
+              A37191D87F1452D9205BEC6CDCCD4D4B0EF12225BEC13339B6924CE553C98CCA
+              B79233AA984A7E34DE6C5E71D1AE74826BF4F8D88F257AA581A06EAA87D02B19
+              611BA55A931D40E782A7360E0AF40144A8C4CD8C3AF58CA368D41C4699747FD6
+              B52D2605F5845B6A607789547932071F5150F750BC68B26E2B8F38A9781BA01E
+              05ECEA2239C77B80A3A282BACB36F8106B168836EEC9B35CEAE041F44C235EDF
+              E8B71DDB836FFED0C9CEE59E13F6F8E10FED1285C8CFF13F1943075E6DE4BF1B
+              06A8F3856B03A8E205E84CAF3D3677121531BEC77989B944C9E4B907982BCB01
+              51C69F5D921C4721BD8D13F6F8390A89B151ECA9A03904CA33A17234B08D6250
+              EDB506313339E530D64DAAB0B354E7F6FC388F2171190781CD5C2AE0D27CA29F
+              9CAF1DB4B364A2CE7D14A9E83820AE02872B6F6E7B7D164F6495C444617BF465
+              5B2C46F031856AC672F04F7511C07245F3910A8263CC56FCBFFFFD6FF86144F6
+              3892F30EC0467115897ADA304315D44D25251F5D074443EF20A3CF0E1275047A
+              978A688F7E559DED81AC6C6DEF7C4615D7253FB2BDA6D9E56990681329D0B1BA
+              2DD6A5E18B98812EDA733D099E605441DB4184DF32579CC71F0451A38E341DA1
+              AFD1CBE84B51CB510F625909D0529E90843A127D2A01B681F9281025731F449E
+              9A483B136DB4EB3A40503795947C741D100DBD838C3E3B48548BD33A48FA8A99
+              FE14FE1C7895BCE1839861B743B34CA37E76EB04FDCC06CEEC53D643373B7D58
+              6F025D1CBD8076D6CD8053F645BBE9B4E632C2F9C230188FB7C774B3D2D28D25
+              FCE3BC32AE619F5114A4F26A8D59A7F17FFBEFBF79ED48CCED95161F3B6DC93E
+              30D5FA8663351A6AE0B3E3D7363017AB2103D84A7060B5C2E7AB7F36F0851D2B
+              A4A6D21E4FF8F1C43768AFFC8EDE86E867A681CBF1DE2F991D8A518F3AE2AC44
+              0A9B4B2F01E754E1D1C88A2451ECE90C4B608F14EFCF53304CAF2AE2AEB15E2A
+              D9E789F40522D68E4A1D8FCB125B6F1380E344D940DDDCF5B4BFE95729A573C5
+              9B675847F866017AAEA2A083CDBE70910736C6CF98C73B3A5E91E300E202560B
+              49FBCC2F272D3B5970311E36B5CB187410712C20B7CD1D3A2B61864F2C01EA8B
+              C30A8BF5ABCD3E8E087D0AE4AC759B2528E39B4F222B7D0C8AD8CA9827821D27
+              CF2E637FBADC14B4F57982AD773F8F3681F310B01BCE40BA1FC264200D5781EE
+              8F3FF70A5B14E8F9D07AB2F73F117B8C179D3C0D72C831FC89D9E616C4633604
+              54F5B21DEAFC804A943BEF81CDD7CAC86077513CC140566BEF4D57E61AC4222C
+              C605C412C62645BB827A9418457F54ED396A93A7DC2705B08C645FE0734DB17C
+              745D26EB5B9E28D09B79406C6235DB41822D1375CD3F0828EBB802E395860250
+              D251B16BB1E12AD859AFC1589955C77D0D8652E630F93102EB251B6B2A11F8DA
+              FAF63ADB11FC38096AC8CE6F1111E62AE69207AE2EE27FEC5C38A8FD90D8A1C1
+              98CD876EF4A78E1797497AED5F9E2CA9507ACDD1787D908B0940ECDFB1BCDF09
+              B6D647D984738D02CA3A1591D8D3CC1EF5DD1FB7B769631CC049EFBF2D74E0A1
+              F8361C1F1356AAB57165445D52EBADF7005F8FCE16B7BF6EE937AFB4C4FF0F45
+              35C2AB9F0387FF434AFB401E9650ABB1407C0E038A63209E2B1A0E7196A9F76D
+              DD5AE9915D91E28786200E1671A48CCF09FEFDFFFEFDE96F7FD30FB29679E469
+              880CCEEC23C7B7057383FA5139CC737474F7819CBF381A43CE88F8CEDFA204DB
+              214E24EAC6515E00811410DB511FB1DBD9784B7C26D9FF56BC2EAF97AC0FE8ED
+              2D04F54725E78875E97529E623352F81C71E70F3013505A1AB068DA89E589BBA
+              B1844D237A39204A38357175456DC3DCC3A3FD1C78CED05F14B7835827D18F76
+              9FE7A86B8FAECB54FA962BE5CB887D0D7CCC7520EAE0A582BACB946AD7832B3B
+              BFC71557B992D5157887315EC68A856943AEC68E0DA795F0972FCED0E5C695B5
+              FE4D27BB8221EFD9AD347C9063F2CADC947E804BF40AEA758020B88B3E276D69
+              A2C95478D2482DDDDC150562D048200EA58F308D174B8BDFB902376701FDB1FF
+              D077D5578B73038AB69AC33C474777DF82916016A76B9F0F491B88E0B61C1F73
+              0F8B10C6BE042194ABDCBC8216ED3319FD778957D11DB0EEEA5FD3C633C3FDE6
+              C0C75CCF9DD52508433478847A3C6B1D65D5568D61ED42E449C5DB33683F0A1F
+              523FBB028B21F7A752E832D907E83C21A89B4A4A3EBAEE0A673158DC25F031D7
+              81A8A34F1450D6E3CE86E274A74FB0C4D7AFA0ECEF6EFC2ED6CF5E9C2EF7D915
+              582B357ABCAA5763E882ADFF0DE005390FF01CD9D0D2D1646DD4AD5435BBAC12
+              27C4B3FADE73061BD4AB23F80207AEBE5A5F5C81D18F57E1D07CA85F8CA1C539
+              F0DBD55D01F1AB989C7F46CE7196F7DDC040766446E55BC97B80F3FE5DAEC0DE
+              7C08C42798772E88A33C8F633F73F95E79ABB17FCF6BF2E2C58B47F91097ED17
+              095CDDE54ED75B2F3E3E8F5E4167C718F9A22DB75F7C687ED32DFC5DDD567DB1
+              0F156FE1399A3C23E73BC171E25D4D35E65D1DC9B695EF8B1A1C08CA3B83CDFB
+              169B1839211338616F0EAC6CCEDD0D87D82669335F201E370A89F5095CA32824
+              D647A07F446664DBD477FC65863CE0CC997D4A5EC815577C0BDE6C0EEFC8EF22
+              FFF0F2599BF8C29CC571F0CDED19FE677DD5F7CAD5B4B2492EDC32EA6DE32A76
+              6476DE6C9E53B335DA3B6774ACFC6C300A6C85EE0C3A2D9DA7BF8D34B0378102
+              8C746FB447EEC40A0F8FF903C0CDFBAC4D1CD7E1B7F97B2931341B163F9620DA
+              67701363034AE95AD30B7D1C01B71DF08D7BDAA791CF95F31F8F0DE47365B14E
+              15B229351E3FD6CB547AE81664FBD47FBD811FDE043737DFC0CD5C97E6C0BE72
+              7F33FD48705A8ABBCF899BF7EE268E73DF3829C5A1F9C4B146FD197113BBAAB1
+              7F355DE759C30D72711313AED3854DCC4D898D9CA9F4D06D70EA576FE00FB171
+              3337733F3CA76F40DEBC3B9BB89A5F6C5F3919D366CDED3370E5C5A6AB362B36
+              E515B889BDB941DCB40F9C2F719D2E9C2FDC947A794D547AE84EA0CFD277B681
+              3F5F39E01D0C6C6B700F7033F7C373FA06549B97E5193CE91EDCBC4002871337
+              B757C4CDBBBB5911B3E2FA26263C67A25C80E74C9409DC947A794D547AE8D670
+              BE57E68D835EBDEA503FB34FC140A3ECF0484CE06CAC33FD811B63B80BAEB418
+              632ECFE0DCA25C244C5A63737B41FBA0CACB9554543E836EBD89DB30173E0B56
+              6BB6B219DC9457FA3EF18D1B9872C67A90174EFECC9585BD7110C0D3E6C071DC
+              18CBA3607C57372FE1FCAEC43861C243EC4C1FD9DDBCAB4D9862416BAF372F69
+              C3DCF02D98AD5D6CD7EB4A9D6EE44C65800AFA239827856DB2B3062F9C9B27C3
+              1D1EDDBCE491188113F6E6C0CA5600BF995C4163F6362F88C70C7211AC5B1432
+              AB774E366549E15B6DD6D706FEFEC049F2E8E6FD20E42BF1FE261C7830EEC626
+              0658774AD53E42BD6EE44C65800AFA916AB356BA171F9BEF7CF33E8B0737FDF3
+              891BB906FA472431DBACA8BF36EFF7C36BF37E2CE2F178F363F3DAAC2F5EFCC7
+              70EDE762DF0FD52BD8E5B9CA3B95AF9FAFFD5ADFCE2BE7BBADF903E3571087F2
+              42ECEE15633B9FBD7334FCA7B7ABD867F7FF2CE2B8AEF47D369F968B9559C0A3
+              13CEF9DE2B8FFA57930981DB637964030F675EC27FD69FF3CD026E8FD3F560B0
+              ADFCBD1ABFF270F02B58CE1B842F1F6DE5F332B28A7B76FFCF0403BBDAE7743E
+              791EED9B580888E2AC57A503BF2892C3C489B6AE5DA37EF8924EF8A2CE2A5EBB
+              83FCF5E79FDAD2BFE32825DA21D08B11716B7AD4D98E7510EB33B0C85956C475
+              8704D038934FF8BB5D3BE302F0C39050358D11E3C370D7038F20682582CF6D77
+              9C4DB6A8FA8C224CFA47FB8E28FEC712D9E61F4F3C6B4FA9A60001D53C443742
+              1D4AF598F35536987EDC8F126D89625CABD3EE9F2C42322D465B1DD559AC89EB
+              2218A84920359B0FFC2D6C448C705A8ABBCE101FF162FEEE3FEA47D4A61CFDB4
+              3D037673B3134834AD1D68BA601FFCA0A7A0E972050C6749F4415DA36A68AF64
+              86679E137D50D728E3EB9F7FFEA902971DE9FE639E28763CB4332DC2068E3243
+              632AA20D75DFD3AA941D6ECD5E9F7D4775F8ED106C4AADF8775FA32DE27EBF8A
+              9FB62B3F4E2ADBB0711B45BCCE06CF18B635469A5E2A1E98FB80BD45FA522831
+              5F0F2FE9EBD862A422EDB0BE395E6322C1AFE74B54F97092F8DFA8FE2CE63897
+              9800FA2161F2D5429FF739CC2153CCA1EA43933095FD45D0FEBF5B3865DC8DFE
+              25701D3B4753C4C43EFE900FFD867618478CCBE87CE2989933CF63F8650638D1
+              B197B83DEB62E48FB9872FADC3568973785108B639C5F7E219A723D5DB66360A
+              A8E7EDB430788ABDB56DCDB11656C6358B7E4B10A3322E78C55F7FFDA5070682
+              FA04FE65F76942FFA3F5C3E605A93DC46FCF67837872E57A3EAF6674332B8CD3
+              620B5C48B89E10B4ED789A64A07A4412AA41FE38F7485C07E198C174DD417CF3
+              98B36ED8C071D2B34100DBC87113DB951557585C2967A571DC89C230F0C45786
+              6213432CA7AA5ACC4F3FFDE4B535677E98B62D0EE66F25DA8BE538101799B202
+              63A2DF747C62B6729D0C69BC3A30D3BF053C51E339B4F19B49617C79A8437B39
+              0FF4C9F5045CD3D5F90C60A7CF599D6DC2F7B3526A3BCF9D704CF4CBB7D5B0BB
+              CB65107C40B68997AD03D58D62EF4B65930EE5D12FCA7010D88EFA56CA3E8D7A
+              E0F9BB8F547C6C5A74CC6790A44730144DCC07222F537C1F33E8BB203EC1BC2B
+              C9C4F753F9BD95F4233DB92D0AF5793CB19D65C71F2AE82F22B1121D4A0ADB3C
+              59D916C9B8DD7C00DA88B3E3D072821CAFFEF0C3FA11EA01F43C9ED06B94A1BA
+              4740ACA5B0B1655437C9CF18587BACEB26425877BD1215416C03CFE066CC9B17
+              E52C366CE219B4559B97441D927AF68EEA67587CCC81243084387E10616DD337
+              9F0CF35D11A2F923D099E9688BC06E6E3D2FC75889FB80A5BF7A9C90FC423EB1
+              6C942219B79BCF91DE079C13E6E12599B5518A90A8DBAAA736D073856504BA48
+              F44309ABF9D06F5EE65C6897EF812924DE3A5046707B847BDA58CE39DE820F20
+              396C9F3DCBF15EA4D0C5F78E185F1C7F64F11E534198CD8FF1763B344907A4AB
+              71DD7604711A2D604C51225CEF4A0268A8C0A49AC4E8DEFDB595C010BD5A12EC
+              CD2FCCEBB49C10C6928735B4CB3157A0B762AD4A30B638CE559DED083E3C845E
+              2E5EAEA9811D7EC7FF104F47DB4A0CD9C6DE4BF61BE7D33630271A8570D05146
+              F2E6ED93F8FC19FF8FAE09E9F57213F33D6F9CD10A1DE94F3FFF6C2DE1383E77
+              12E0E7D53E410153F6AAC4A3FD59171B654C17FD06D8C1826A6D4F802325CE6B
+              D067F218437707FFEC4BA4AB72DDA9DF99C28579367A082A94A8BF0006EB7246
+              3C2E6775B6895C4DB5DC789FAFD08F710672629C5662C836F65EB2DF381F6E60
+              582A51E2C0292379F3F689E06A4BA9DA09DDBC1E8D4EFA8C7648E38A4D9DF361
+              DC675CF0970E70F5ACD68A22EFC3C46DEF8412E0144573384D17416AAF8AAFB9
+              F790E3A7D367F850077113992E5018EB153488E38EE2F45A013644BE8321D08F
+              1B668413DCA9B34DFCD3FF76558D738FBED4D38F7106FCD0B4D2E63D96CC15F3
+              0FB7D033E2C0292379F3A234E215384A41DEBC2CE3CC66F429498D0791C3D4B6
+              7BB85F73279896B8E85AB92A24D5BADAE0E7AA862DF0E74F3FCBD5BD5A2B0AEC
+              F43DA38ACF02377516A0426A544DA33A009D7638FBC696C76DB3317C8EEF1134
+              3BC229CE69AFB863C21AE74D8C36F4ABDBDB785CCEEA6C2754095B9C7BBC2A43
+              1F628724A6479C9536772B41CC79616DF981D34A149449D61F8081182F4BCBD8
+              8AE6E7E50CCD214F07A10D4E9B54DFB659E1733A2F4522DA0F056DFAAD4A80BA
+              88285A4E968AEB071D3E3C09FE03D09F09DC5C22621B818E9271FD8A21DE6585
+              67363047E82836E78EEB896BAF83584B3130F4893A48638A445DF46942B20EE5
+              F02AF05CDAE63C41BFD545DFD578767C48D5F7D5B9C61C67B1BE9E7BF8AB3073
+              0E81BB79520E80C0619C920A576530E87132F96DDCA077CA21F40B8792E3EECC
+              BF624857CD2171A7FFFDC09AC3B8C2FA0E883EDD364FD99A0FE6B193EC3F19AC
+              E2D6827B79852AEF953CBBC76E770E996A2CB33CCF9A3FB9D2377876FFDF9A47
+              E6A320B0922DD26D828AEB5E4C90C5C16BADAF9156E37AE195B843875077BF87
+              B0344F02B9AEC80F0266E3D5032B1B28EC6C9F958DC3875893753E0416A80F42
+              A2E056E2814D0CFF1893DB0362D0EEBC09B27F6E9F71295E0CCFEEFF2ACC1F25
+              72B0C9B1CD3E99337B431CBFF25EFD1134FE427F99148FF24C7639F5C75DAC74
+              AEDBC55503959EFEBC03160769AA1FDAF82294AA67259E48F92934EEADE32779
+              7EAC87C084BAE0374770EB1F6FFFA1AFDE0F9C8089E8645CD85E228EF0050FC5
+              071E8A1747F882ED7851E2D4FF8CD8AFE676F4530F113B0EBDCE36603BEA3A9A
+              D8AA4AE914A0FDCC6FA0DCC41CFB06187DAF6E4B431A7A1E9E89B99ED272A1AE
+              CF13647A9C20FC9A5453977C9A2BC434C4A0B63BC8A047A20E75F50AE0EA0AF1
+              81A9C80B85B629AEBFCAA57871105713AAAEC417BC53FF16A64F473FB455D40E
+              625D502FF8A04E41BB8636842AAA1D717BF785F20C714232158B76B1F85167FA
+              01C6AA246F982B9D8BA2712ED63C9515B3FECE10DF11E85CC4D87265E0D8C5E3
+              66A54BC9E014EB4922F052411D123730DA8FDC42333EE631D31C7110579707E2
+              030FC56BBF94ED7873F746C463D5A632E081EA89122A4AD76768430645B51DB7
+              75A10EC62596AC89465B5CC816A480B12AEE0935EB5967211D8D734193FE9598
+              7B89988FFE10D8CC658AF88D5067E5A24F73EAB200FE162657722F89DBE7543F
+              BE5885F82DC4E1766141CBC7DB8FD45EE612D7361A3A5E8917BE55FF8C83DDC7
+              C0EF61F7B2D193A9BF3646623F959DD0CF7A2C3CBD2B10738E70C495739D34E7
+              B278AD1AB3CE98AE2F41474C2D050CF0CD3D2DE2C7910E0DA3EA3320AB3006C5
+              E356EC1DA271EAEB0A8037D71968629EE97BE028D45D056F7D7D0CC791D4B4F9
+              A33BD421EC7A23D7F01A87EAD578F769FDC3FDB3BC43855828B4940387FEF1BC
+              11AF07D0353E063FA0DA28D61E7A0F10E090A5D12695C8FA89DB545F114FBA0B
+              613A140D0D41DA747D48BB4426DEE6CE90986391C79623DA8755343C7E9EA520
+              EE23611D1B06881743B4A264CA0D8C9944A1AE426E8F6570DE70D086E0ABA70F
+              6CE20393AEE7447F19C7E5F80CE2B3AC0876D986631CE5000EB298D4366E5EAE
+              2F4F842867480ECB981661763C77904844D70930AE905B6B18E77CAC87A10C9E
+              6DEED6E90EE8CDAB2959C78743EB3886582FE2DDB779491BF1E5E8D410C4745D
+              A58AC470E5C57AA270A980F71DA97EFE0B5A9BEF89BD7D4688D36F73B5C96EE6
+              68F1F2D4652FBEE82B6A82C893850C8C5EE6A412B426AA6E88061C4BB3B13CA2
+              D113DC6520ABCD53697D65A1CD9DBACD75CA100193D9294DDFED447D2B91A72E
+              1EA9FA50179961712E68ABAE8E6DFA41A0A7241B622C70D49D11FB42BC136C01
+              4DEF12809F4639AAC4F770AF9688B5144BC47B7F13F74D6B03CD9B1875912939
+              5E9EBA9CC7AB4F140D652BD78FD0DAC51C55B4A045550DD782BA341F9426C4C2
+              8FB8F9147727DACF4414A920CA24EAA97381CAD441463B19F46EEBED144F1B4A
+              044F98C6436037B7811E13653F1E88BD83F68990E6AF65105136D1B6AA8658FB
+              323DD82D35A11663A209EA27DE679B989B95C43E346E110BA6F1F2D4046DB5D6
+              0CFD58E91A9494D63E50C6BBB38A1663BCB7F559048CA5D90C8BF386A019126E
+              1A803A8BEB23D263F130FF86347410DE5444816C4D54C5324AB793A60BB65117
+              E26173591172A1E8F1A69BC6B7B841423C7CCCB544FC3BB91D814D238CA6CBA8
+              0A4F146D8E6350E5EEE68D25622DC529F45D6DE2ACD37EAC9CC644D6F1285DCC
+              3CC5FC5B7F6C69E858AFA1C710EF012A6AD56AF4D6B6D78095A61BB158D6474C
+              7B444D41E8AA411DE9B578987F478EA1D71A9209D954D0545568CB5317D391E6
+              47C93A6D07D1A83921AE87C586FBCD68F18358DC466C27B723B06984D1745A52
+              E489A5354CE0A7510E158FCA157468934D2C3A8CCFF4C4EAA57FA6F9B30EACEE
+              82BA0B0226747FED33B682C893FB6706CF18EF412A56983FED2A6AEB5201354D
+              E2D3304D8D9A83D05D033B3286E261FE9D8D0D1CDB4D1744838CDAB76A7B2C44
+              238F0C711055B17D1E4F7A8C0B74665A22BE9DDC8EC0A61146D345D844A97556
+              442CCC3ED8C2D5D45A17C12F490BB30FC72A5AC71845FC2410B7BFFCFBBD117C
+              D29A7D2B76E3A5DA1C4435CBD7D2D88F7F6678D623D378FD54DA09FDDBE9452C
+              2D9E244FD7B3B7301FC16A836381AE83D7812787BE6512EC54CD9847F7C306FE
+              35B40549A591C8361B89DABC0EA4891C8791E71C6184ABE377B2029ED7EB20C5
+              675A3EEF7FE58BF196DF249D0DCA979D11E2D67FF230A4418329A49ECF9FADBF
+              C8F144D07B1F414036DF67D9843A090AB08969B58C23BBF1F2B4CCE368B8C5E1
+              49C53551A64CE3F1046D0203F69A9695CF143DFA1B2029654A74AA9C79F52DAE
+              C28453C9E8288B285B992E59E7680D2A6D8D68D61853095DB4764E3886EB1899
+              176705BF289AA49284A8BA8ECBA48227CF66EB87A70EA346ED3E87916C12FB5B
+              E568E7A64FF06A7F77E3BF0BDA241F6038736E2023B83406E9F5873C1619ACCB
+              6CAE13DBCE3AB6989D4544C23B8BFD8A7F2C1E713BDC19DB8F4C5EBFB759A7FC
+              E2B9F77AD89D6EC6AFBCAB13A8F41747F51563B46FC74FD0784C2FCCE972FF3B
+              F113343E2528E3C5437DC518EDF7E3D3B13D6079CB9C1F000CFED6D8F06127CA
+              5FD3FBED0D8EF70396A1CCF3E5E4CF3FFDF2B5FF61BA3F3EEBEFE42ABFE2CF41
+              C50D28C7C35A784257F6BE5635EE166E7846037820BE7A0F0C4F7C52ECC9ACF4
+              BADAB45600372B1E8B77E8A3DF2893F1F29B6536A345BC1868875C8E77E863AB
+              8915B30497FB7F307E0E0E1E648F75AE6B5CCD45FF87C780CD8BAFE242B89137
+              A96FE64D779A079B9542B869E3E63DD00E339EE4A4D3C3049DBD0E878DA73A14
+              DA200FC6C70D0C85DAB0F9F83DE6086C166BBE5A132475CB0EE5D578873A6E38
+              7D7F2075BE4FF0715BDD45C9FD5F8D77A8EB2B699B8F2F83B6921BFDDF8C6FFA
+              1B3C23476637A7FAD95495B718CB0C5963AF55986DEA11372D985D790FE86146
+              054FFD50E3A8E3D0A3E4C947BC6DCA1BF1DCC0ED8A894DC7CD87B2027E9E8F59
+              BFFE11E6F78BCCFB6ABCB7DB86A31D834789B6EB61F98CF142AFCF2859033A61
+              AD5D88D76ADF70D646DD4A4B6076F8598216CF0103EDF45A3C866C231544D9F4
+              0DCB2396A329213D9CFA5CC6739E253627F70AC3388B3B106F9B376FA1C77360
+              86F95C1E0FC81B5CE171D194A8F7B2AFC3D89D6D4A8FBB19DFAEC0B2489A2B6E
+              DE7C0525F06BFD3A1AEF75C04D5C51C5C357CE696EDEB0076C337B5BEDF0534B
+              00F1F1450483B912EF0388574D26B0CD6C6DB38F5FD934249EAF0A204C602B1E
+              3FC7168FC6E0805812EB47A48721128D9590CA1645F1DCAD9D3063B286F62CAE
+              0051F8335B582E8459DB6C53E4C87A6D85F9EC780E70F3169BD873A1C010ADB4
+              0D669B909B0D600D29CEDD78A5E95187E024677B651301838F3C35C936C82ADE
+              3717ED52194AB59FC58BB2CB66BC69446C73595D2D43697608DBC6102FCA26EE
+              8716CA693C36B0EA441047812DF8F67AD711446E037F0B535CBB07FC2D6C0096
+              A9C06E6E3B484429A7C007BDD50FDA13F8108B22BD34897ADA62DBC381D8C058
+              467DAF77A043304AD70C65D4F77A07BAC3875850437845062821D0CBC9BFBC3A
+              5B5AAB0354AFC4F3B6DB2E88FD8A19FDCFE27DD88634AEC4A701F42BE68501C4
+              FEF54ABC8EC7E6D5CA17D141FEF036D0A5448E882EF2801FCFF7C1FB7ABF0ECF
+              C158F0C288C1A513C0818E2720FD0BF05E979259BC0F96B3443B40D50F176FE4
+              4CAFC3F2E3C83270375E7D4B810D1B00F55CC2A6D1B378E829D2DE8DCFEDE89F
+              DB084649DFE827952E415FC59BC625B7E31533B78DEE1BFCA4D224EA53BC4ABC
+              02D3264F5D44ABBAE0E5B14474FBC0DFC214D7EE017F1DEF88EAE3F828B4C169
+              0F892AA5A4AF6714E8F9D07AB2DBF83567BCAA9E49CC82D884E881F7E9ED5C12
+              F789D0429BB55249DC4741B394BCE96289380BEFFE07818D22ED9DF8D83663F7
+              BF1A2F8D26D0CFE2DDDB24B6D52A250F384F96700268497F8B6975693451FD31
+              1E5E321E6BA304A6EFB190EE6FE2ED084215D4378454B64108EAC5E625434C92
+              0B20BF4E39C8A24FAE6916D82095ADAF7FB981E959E928882DD0BC99A88FA548
+              A6D923511F4B5E8BAD3901777BBCEB8B25AFE822CB78F520E277160F7D6C477F
+              E8AFC6EFF43F045C1BC069BCDE463BFA895A1A401C3CFE8636FF473BA83595B6
+              0C66A24DE8C90D49C73BFFE92D9F82EF8F7B15BEB19B01FE920873C6B8447D5A
+              D7E33C212C8AE2B33DD2FD305FACEB0AACBDAFAF2337C6E3DCF30755B875AE3E
+              8196115563D2F5DFC16F85738E165FDD2ACF404C29F18A954BC45978F7CF427F
+              71ECE27AC459B8FBB8C4B619BBFF4EFFB16D46FC0B22ED1C6F5A97D856AB947C
+              C5E6AB7D7805D792FE1613EB1A2F9526AAEFF1B01E307D108F55719DC757A86D
+              B5292FB29B0FA33A3E2CFE22E3945D59616B19D6F35446FFC315186B1BA5D241
+              105B2036B17A5F1BF54CB4697D06EC718B6B32552778C148170E70293E7A7BB5
+              8C47FE9827F64BBB73297EA7FF8B03B8143F5C897BE1C7C2E0FF62C1AB702464
+              8C1D87EA0036DCEA6A7985DD5CF5696D5117C711171084C51BE97E32C62D4EAE
+              C080575C7E70F5ADAEC0AB5CB09703D0278FE3B98B32CC7BB69860191F872349
+              4EFBC718A5AE9F223FD27F8EDFED3F24B0551C0770DAFF2CBEE85F0F18372EFE
+              CAE7124947BCB61ACB7BF3C40D9C37D5E2B69D1B379C204B46FF720357E44D8C
+              73CBAB113D9EBE3915B6A33ED4738E211EF519F0C9C1118D44BCE7022BFFCC34
+              5E546A93C62ADF347E9369BCA8D4268D553EF5490956FE9969BC68D4260DB4F5
+              EA76BA71239ECFB37AF121B039D75C18E76C432D3631B87E057E8BB5D30DB8C3
+              6A0303D8EF6C60820C7726FA8A3F8F87CFA3DC19DB8FC6EE3ABEE59A5D3D9679
+              2C77CE85172F5E7C031EDEB48FBE12C50E5B0EB98351BDDCA19479CFEC81D984
+              76C7FB8AAFF9DEE323432E0968316238ED07FE533F3F4F4BD2B9FBD3A77F1F7C
+              FFFCFADF9F7EFEFCFFBCD5A9F47F7DFA1BF221C7E9982BAADF077E086C4EBC8D
+              8370A346CEEC01BDEDAF04367D5E733B5EBD2AE1F39A0F102F6E95C8B37AACF9
+              E6F138802B3903BD79F5006C90E96E599F9BE7F6EF156C4AAEF16C03AFEC4EF3
+              99097CCCB5A48C89021F732D81C7FAF1E1E3AB5907F9D8F140BC9ADF20415F01
+              E320AE6F04FDC1A6E0BCA45414761D54023F2FAFA8F44CB3294FE59054868321
+              4D3B3AB1AB6D100D493A11F85AC8C0E8C7584AB0C1D7420660191E8C3D3CDE21
+              9EB194E181F611B1886B901E3BEAD5F7C8C1EF4E3C6329D4ABA05D83C825F031
+              D712B5CB5313536B85EDA63BB0DABC7398530570A3EEE8452267ED03F9167A96
+              F8045BAFF9EF6F9ED9A5115B80EF0C20E7EF0E8EF180F1E7C889E53547DF2089
+              0E32BFDF6A3C3D1E307E036C0CAF1AF8D2087E00AE3F04F71F3B2D787A3C60FC
+              55F4C72349A87790B44A0C87EE25881346A0BEAE8FE623279FCF3017C1891725
+              7255FF08D8C0C8A2827C9618A671A005BA58567D5F36C737E56AFC6113DDECFF
+              BDE30F9BC8DA37FA7F937839F54C65E7E028E4DFFFFE772C6763183631F0F6AD
+              F3553AD3FE5882EA85865CD54F405F9403FF25ABA3152B708544625581184C51
+              A48290D67EF1E2067A1EC513BB126CDABFFDED6FAD5C914FCCE9899ADFD7E6B6
+              238DB23D7BA10157F505D889510E845B6824B36F7E20EFAC74C7172F9EC5576C
+              C81D899B17E50C9CAE5E1DCEFCA86FCC6E9983BE8C13A0CF2F3291ABFAC7B097
+              01DB9F8A95D04DA4005F7D434C94F875B833BB28B4DF205157D81163A1CAC17E
+              353E3F1053D5DBE3C3C58B5B108B39D69B7C9C78D6B74536AF8AB70744A1FD41
+              ACD988FA23932B6F26C7CB540E3CF02934417B2507F80D6B2DECB5EA58FA2B45
+              7EB96042D7E7C1E49797A5FD3815408F3A721D0F2B75B12E54F1B90FC00F9F0E
+              EF81DF297E4A197F4CC00F9F0EEF814DFFE6F153C678BD0257FCF5D75F5EFBF4
+              E9A79F7ED232DD42C7316009DB20DC30D8051DA528B3DEC0E6DDF8102BC50F13
+              C789885F4CC177DBE31576A617AAFE7C98E7845B68F833AEBF179E6CDE6793E6
+              E46038C3F24C39C6C7B8F31C3259AF052E7C0AFC26F117B08395B8F029F09BC4
+              DFE5975F7E6D12A9DEFFCA28F340AB01E9280B5FE3E227D0001B334AE4AAFE31
+              2C8B8AE504BD74DB06C81325736657B4CF95C0C75C4BCA9828F031D71278AC1F
+              1F3EBE9A75908F174FDDB654B7CFD24072156B2E39D8190B71D5C0C28E761370
+              E3E7C024FB500EF80B9212EB91EA5529FAB93DFF0A58FED5AF337BC3A658E02F
+              F2B338723BBE5E2AE1BB895F2EC0478C9FDE464756B7CF82F6EACAB3316289F3
+              ADB0EABC3AE510539C6DBC55CE547AB975ACC61AA6B266CBA9200E5A72E4CD49
+              B849CFEC0726FEDBE37DC5D77CE4F8594CC52C0F725C19E3C15794D37188F36E
+              EEBB6CCFE3BD06F4E2C58B7D662F22AFFDFAE2C58F84EEE8EA3E7E87C5FDFB8C
+              F77805D999CB6A1C77E34995671297D7BF5C5761E6F75EF133EEC6EFF256E3DC
+              CD7B37FE2EC77EB4236C60EE45EEE5AA9DEB52E681A60E4ADE68728A7D808261
+              F958CBBA0DBB1AC7DD78F2F5CF3FFFF46AE7E79F7F4651C4B103C3BAB04E4666
+              7EEF153FE36EFC2E6F35CEDDBC77E3EF52F46395A76CE02139F9F2C5FE609BBB
+              46FFB7E09B6F6099AB3AE38B07BE61156C687E31E18F3FFE48B1D601BB01696D
+              1BB2EEFC7E850FA50FF03DE26BEEC6EF538F7F9FE7CCBFFB3F167F97D41F2685
+              C2AB4AD526AC4B19693110FCCC4B95EEE7A5D6DF10F6B1231595DF4C66E0EA5B
+              F9CCF402D6062B7458D309D9BFB7B522A2DA49DDABEE5EB5AFD2E3B522A2DA49
+              FD3EBD3F5734623FB3BA57437C6E772ADDFDF87DEAF8DEDFD3FEA44EC6FF3B0E
+              5CD93F7BE99637C3AE9E9CEF79DD158DBBF11F0AACB957A7F5B764D667ACBF25
+              B33E63FD0CF595F3F64A4CE43DE2DF6C03036C5A748E4D2CC35195483518E828
+              9999ADF245A762A94DAA877DC5DDF86F8C8C0E8BBEACBF253F4AFFBA6978ACA5
+              D4F605DE2B5E3D60E415927E553BD7A5F41E94DC01AFBC87526CF0656CAC83C7
+              6D181FD2FB389559DB86FECC78101C4F09B1D6813E5B5E18F1356AD5E77AF4B7
+              F57CEFF8CCDDF8CE2C26D6A5AA753CDBF83BD16F56B7487BCEF3471BE729E731
+              A0EAA3FFF5F83597FAB7CA5336303087CED9E6058CC9B940E5CBF62CCF159E1A
+              5F7DF23C63FC44DA16569FB9A4684CEAA31A2D8DB4E777896783DC8DEF88A7E6
+              5AC7B7EA21D763F1A8F15918538E3C257EEE807D72A97FAB3C6D03034EA3F948
+              19372F58C609B443177D63FB60C3F0D08B0F5399B57DE4437C33EC2718E2F3F7
+              5CF1DD5732B179BC756069FD155C98D7F1DCFDDF3F9E19C8DDF891594CAFE3B9
+              F767AD4E1DB38A373DDBEA570D51D547FFEBF16B2EF56F95B7D9C0824E067E2C
+              45077B8C5BB567757068EB8444E3C354666D1FF910DF0CFB0986F87C05CE3F46
+              8ACCAEC0BE462764FFDEF67121F1C3B790A85FA3C7EFF57F97F978633FB3BA45
+              DAB3C51FF3E17CE55C146D5291FD731B750D40D5D06654ACD9EDBF7D88057F08
+              A9DA24D60BD82B372DEAAD841E9500DAD053A23DDA004B92DB323609CA3D38D0
+              077BEDB59FE0E0849FF35200372DCB6C7F4BB0F65E9DD6DF92599FB1FE96CCFA
+              8CF515BA59E82AA5B62FF05EF16D03473BEA67ED055C205E795167C02C107A4A
+              26DAA2FDD0C6B038B4557D82FD52FA2C28D627E0CB1B14C08DCA32DBDF028C94
+              077E567F4B7EA4FE71FE2246CB07788FF867FF18C956080B658BD56E9F556F76
+              D6DF04F6D48770AC2F9905C57ACD67DC16AFAEB0B48DB7CF1D3B4CF30EC6811C
+              613CD61C98CEB03A7D6A18AF8D0760BC77E97D1AB9FE18EBF913EFA6E8DF6486
+              D9C6FC8C35D6FD9FC75FE7AC7FEF723EA8156970F61E12401DEB006DEA4D1763
+              9F85CE24779FEBD67DD9FFF17DF03C41150FD4B9FA443ABC274EB1ECC0B02E7C
+              940333BFF78A9F71377E97B71AE76EDEBBF17729FAF1FA8FC430C909AB79DF8D
+              27559E695C7E119D9D0033BFF78A9F71377E97B71AE76EDEBBF17739F4E3E58B
+              172F466CA3F03FFDEF7F57AFDED8F24F0CD17629FE51369261C7BFCDABC91B33
+              BC52393BF360DCBBCD19071FA574C83EABB103B517FE0BAE1EBFF115FEC869AE
+              93F881432ECE0DF4F95D3F0791678C275B79CC1F49B4E2897AE49043DDE0285A
+              FBE7619BF10B86F08A9344B85E7F96878E6EB7D36F8D2F1EE71EE85358CDE574
+              D19E8D74D8068B4ED35D52037765D122BE2763C40D173E5C47D4CEF19B747C60
+              994B72687FE53C740E38AB2C4599C713A4F921D9CE1C2CFE180BF6E205DD9008
+              6240ABF70C5A5337CFAE88B61BBAFB2C7E010E9E56566BB5F8145A97D96A5A72
+              114E39F3DBCDF308B698907CACD0A66D3D0604A6E046CFF044A4B3D6DF2A79B4
+              C5981A1C7F73B1F2ECF8C5937C25A0CC051D73D8B3B867A17E8624489B8F20E8
+              FC1CBC1B2FE07F67D08968123C79420DE62DB1A326756443B8103FA16D5EE0F5
+              AE3847430E62C512DA677ED0532AA23DFBAC6CC0F4F1A16D1D73D7E141DF4E6E
+              93EC3BF37B06C35A03E8546F8D26AE5FA00107B1F0192B5B06BE077FEAA4AF23
+              D4473F910118BCBA80FDB2EC712CD7F4B80958298C94FFCD8A89D4558747D18F
+              28A8539FABF1010C507C8FC0662E9DE20A0C4F7DED3870F14A9CC971676D40DD
+              CAD6D039C6A1C3435F78ADA9A0399F020C346627B6EBC5B9871D9F382E193774
+              36A7D02575C7F13948550FB1BE12A34D5DAC6F037F8FB17EF35597575C9615E8
+              58AC738706921CC77837DE19AFBEF6C153CB898A06DA5514D596476C667E30DE
+              E9032BD66A7DDC157539152B4AA89FD94165836EA53F8BC159DB40BB7C547E23
+              D4AD2453F95C11E02372D0AE2480180B8DA8E5542C5D046DCA0E832FEB92FB08
+              F5D1AF9706145EDD00B11423289AEE9C1E2FA06EC235EA574FA07A3CD4C647B4
+              53E4F1403C109B833AA500BE1632A0966DB162E0AC4D56FA4A40A587106D4754
+              171F95DD24136D950C78BA11A82B29C8695A3DC6B92EFB21B0A3DA6DB1B491DC
+              DE86B924EF11B353D86EFA8F0256C4365D7CF431369B8CDC1ED506BD117F003A
+              4A01622C5419FDAF4923D6416E93991EC01625B2B4C948541F415B1F859EFE22
+              15B4553260191350575290D3B47A8C735DF643A031BA5E93EB20D0AB80797C64
+              23D17E2C3F0CC306831C36A8C817D141920DDC8E2F819E92400C02C38D36D4C7
+              FBEE19F8D104D2C8FB9A766B3F212785EF7E477BD894047B87D38783E11DDBAC
+              5B21428738AE1ED4A9C65DF95D41FB8F63E4C00EA479A0D086820C93B8025905
+              4D87E327852696E8D304F405EEEFAA719D898DD3ECC7D29EFC84364EFE874082
+              B79AF216B3C75F88F32ADEA2C6186C2E45DFBAF6F7AFEA3F4C4DB41EF8D4F86A
+              FD8673C1EDC763DFD01CA7627E52EB143D2BD927CBB3D071F5F1F90013951F82
+              BD649D5097E52DC0F00CD429A4D021C642236A3815149E43E9FA35F48B32AAD9
+              8E126DB974FA55698BB8091B17E3430E94588D2EAE532B6D2883787C13F5792C
+              3E22BE051E03818FB94ED188A9985D6A9DD3845E02D429CF46C7D7C7E903752A
+              3B8226D09E7D563177C120BB6094D69FD6A3CDF51346DF2C282C5DA7DBF648BE
+              0C3F11FA692CC5E0E6DBD884E5E62517E2E3069651C581AA7083E196B7B243E8
+              238DA96D233E23FE05E65BF95768C44198DB9DC859D2ABFE8FA2631CC7DB6562
+              AB88719955DC2D24A90CCB6546F0F1B009A32F0585A539D27DD6147E54413711
+              DA9ACF9C6213F2449F9CF0238C5FE4896C6DD04268BB1B2F52A1C729029D99B6
+              D1B026CCE9C68F8A8EF54CE067EE2577ED979164322C133467A86DF45DA001C1
+              B7E59812FD57E2EE2498D4D6C4FB1339D8D6A4CD8793DD4FF83D105FE4F06A86
+              831F246C3015EA2169F30D36CA85F819BA7E0075535D46C3D1A7E2CA8F8E4E18
+              E3CE421B9C6EF08C1C03924C8637E4641F5914A964FF0998B6B903572E51E785
+              B85B2498D5DEC4FB1469B67DC206C4094F71D51C6EDE14EFD50AD83801956283
+              693BE80F36797A347EC515DF197A1CEE26F91670F251FE037997E397D779261F
+              151DDFC6069BD9547F23FEC58BC6EB04F90FA2FA6D24BE4ACCE48C2A26CA7B73
+              B7CF47E2E37CA3EC52C542CED8F1D9C4FE73BA4DF2F8AEB609F5955CA5CA41F9
+              50C880F4D6DB9B97287F9D10775C95EC52C5424E80C3553983DDEEF85660E056
+              EEA37D56029B3EAFB13E2B9167F5A89138AF995F29FC5F23D7D007E5A58D7C17
+              FD72423C6778001F6192A7FA02C48A779BBF7474B9AFF2DB1C5ECE385B0059AB
+              3AC5E21B2400ABECD50DD6B9C0300CFF42CBCA3F338EE7BC3F309B7AE3641CE7
+              6B508F43E2BC76468F9C8C61B5617F9D8D9B30967E67ED198773E8E4DCC9DC8D
+              8FEC8EF916D2491BB074B4DD57750546F04A4EC16255F28E1C3692B79376CA71
+              23597B157FE8B362310E8B3F5BA7E338F6372F80EF97564B9C5D6DDFED8A2CA7
+              CBF3CE17CF753921FFB37610EB05B03D2264F812B318B2DF4CCA49A961C1F356
+              76E4FCEA13991F94E546F2F3623587F538EA7ECB3E790E665B3186215EED50AC
+              130CF1A7478DE0BF64C27FD384B27F5F57786463B62B32631F6DCF9075E9C3DA
+              DC888FC4CCE8898C599EE1F8EDE08796F97A7CEC619193F1D580860588EC2EA0
+              973366F1179740C9B9B616322D5E64EF45E4B80E877ED5854A6994F69EA38CA7
+              52D7BD4EC078609B386A2AE0C3FF73AD6DE03B5755DDC48C67EF57DB2B6419CC
+              FDEA06BEB97901C74966B9B44BEB0E0D2B576DAF33DF186F8502D546FC0016A0
+              04367359E2DE476033973781F9AF48A4B29F09C1EC9AA03D6A442A9FCEC19681
+              6EF01AE3C94C1F311FFBA2C3C297B7CB5996C01E7DCEDA15F419E208EAA62A71
+              AF831FDBABD801BF65A6BFD617B7D1E8F19220C64295A30F748BBC884160B583
+              63E28A72D707A4833AC5C92BE259BF156763792F8629EB34F31A88F2E0D3C77F
+              88CF6B78B80A5B02C647E054E9334CB6F09D6DD8E9875939E7593B339C3BE97C
+              51DBD93954F8A88E9CC447F4BF8BFDE38F3FE0DB13D4B1AD0BA40FDD4DDB368C
+              3846AB0CFECDEAA590E3E9F24C427725AB3EE35A4F4993271B9107628E3BF187
+              71EB18C35129ED27F1541E362FB0048C7F044F689F688DC40DBAB589E943DDD5
+              3690E91EBBBAB0892B9BEA329B9B18812D8F97A08A6BDD2075EC72D6B621C471
+              5A65F0A715243BE3DFE28B1C48BD9215BEB673D2C44730B35D39A2392BD72CCE
+              72A4EA87C18A84186539070731580C48CB45ACBE8C5F806CB8855E1037EDF46A
+              FB2D90E5980FC76DB7C71B6E956DAD02279F463F97D8D3645695BA7CD5029B0B
+              7436C19D052E87E0C76E168F77075EDD603E97D9F495C518967191498ED3788D
+              83D37CEC913A1BB4973EC4C206AEECE5C6A61F6D67ED88CCFFD8CDE49CDBCD7B
+              256724DE3E9398E8D08F9757619E65FCA2633F9546CA4983DD0D7C339E0C697C
+              A4ABD8676D60504E61670C674338C971373E621F75642EFD1869B679C1D33730
+              90F9F7EE4ECE1738C6BCCFC849AA7C3DC979FCD391CE5BFFD279EBBF1AC830E1
+              C83B6F60A0A9364FDABAD335AB9CC33436C70066D3DF9EC7CD78526F6070D8BC
+              33B6372FFDA8BFDA8EC43E2BFB235CC959F9461D79D6D8B69141B47148E7DA7F
+              35886AB091B381DF8DCF20DFD5986771E50524325B83DD1C77E341BD813DC397
+              2F5F3EFDFA6B75155DDD4E83A75C7973FBC526B270BA76B270AFB5DB8427DBF7
+              06C67D90BD5F6678F1BDB0B38BAB037E65F7DF8DDFA4B8E1DDD67D1830368CE9
+              ACFCD1C13C3397E62DB74E5FFBD1BD7C9C6FF7FF5E94BF4E7800D3A114881ABB
+              626215183BF7A88851594AF877AD71F0B422ECEABE253208AE1F0686ABA4AA67
+              259E4E804F25BB6069A27F6EEF72B95F08BAA2FCF9E79F2AB4A17206128C5B76
+              7BEC4FE9DFA17F9412316080D19EFD73BB71B681EBF75113C4357B5F8A0FF822
+              6AA595CE706822F6FFE08E6CEAA0B82A4F47923E23AFAD79257C7E4FECB8EDF4
+              ABC71C9B45DE9BCB31B29F81FFFCF3CF9FFEFAEBAFBC91A62049BCF2F6D3A6D7
+              263CA57FE7EBFFFDDFFF7DCA02BD5A27889176CC405FCC5DD83E502A0376328C
+              5E654CE81C0EF4D98E4F602D5188C0FDF42B748A1E0147FCD57753377EB1413F
+              A16D2EC2A16F0EEC59F401016961581866553A55FFB6DE2B2CEA6CECBA44D217
+              FD727B077BE50516B68AD5FCD828D830DA973C3099564A0EDF40EA231CF22149
+              589E569BE9037019FA57B750EEF40FFEF18F7FE8A4FFFEF7BF7FFADFFFFD5FD5
+              016CE07FFEF39F5AFFFDF7DF0FB112E48BA58961D76168DBBCCBFE56209CB285
+              38A24F156B5E8B7730702C682BA133D32E6D1821AED235FA5F326C5FF21FFC21
+              91AAFD88109DA728BA2C80BF850DC062B6B3471D1F613F24B777909E302217EB
+              7396E3AB6C0EB5039459A8A79FC880D929860609AC677BE076FF015C7D2B9F99
+              BE21863EC871F5A671F9169A8E3A5C4AD46B6B427C89506779BA122FA81DAF38
+              F6626FAF7CCE4E7CA37A9F5BE99E0552CE24DB8536A9C8A09479A39D6502BB91
+              8A3CCD1C4F923C114CD4AB0EDAA64B068CDDAE7E2879BC51D749B937F4F4F32B
+              61CB23FAC315163AAD5A9CD8A7B7D3EA3AEB9F8EABFE9F0546EB556BB800E95A
+              0B7D9ED0C6BC12F899FB81EE67FD99845808FCCCFD14F10756A26DEA1DE06FE2
+              B1135D03EDAB12F19CF811CD28A6A77D8865099ADD2B5D0AE0A7511D680781AE
+              3DCC5F6AC1E39823221EEA4372FB8CB1AF28C77E45EB7A3CD8E603774478047B
+              BC0A5A2CC5B0044D69A22AAB74B5429B2AD97607FD53B14DEFE5C955F8E12BB0
+              808E5BDF2A3E67D57B5D3D13CD6147E06F618DA31F74946483BF852D717F79DE
+              F31FD040C755A5CE194708D7206AC7CF4F29A68B20E514DAF1335888850C39D4
+              DE4A6B34419B02E0A7511D680F02BD4A653DE6888887FA90DC5E41BFBA5F88F9
+              343F10CBC3C3DFD6D0EEBF50004121A5EA1577AA454D56E9EAA6EF65126CE268
+              1FFB1FA07E472AD08309EA14EAB0162916B7D0305CC2FD1955C7475DBF315052
+              7C85E76CB734294306DEA3F0F6C3C2E73AD4DE03DCC2E19B4FF5B79F46745061
+              6818385A5706AB737CDF29EE93C684DB52606F1A1CFEC2054B61B03F11F6EF27
+              8652743FD80BCA4F9E67027F8D1AD1D35DC5158AB6652F14217B3F077E94D8DF
+              72EE031A656BD582A0AB26EC9837DEE3EE8AF96BF114B0F23371388793B9D8AC
+              55E20091CBABEF800C5B7BD3B1E2D5948A13E04F3F4C5EC7BD037EFBC72E3002
+              42F80B17C0BEB7AD76F845FA12594DC7591D589F0326D387D46B9AD7E326DDAB
+              3DF71FC1A7CC51F0293425DB66FCF6DB6F5AEA9A6BCD08833E00DFCB82380BAF
+              ED83C087E23AC459F814F1035BBE8EF99F09537B10601F57E499703C5A1E809E
+              A2CD43FFD036417BD42439C6CF106FF5DF65E67BD6FFF6A7C0D5EDABD9288607
+              9868D52A54A953E756FF8EBEC78D021D65628B7C95CD1B75AD4F796A82B65A9D
+              B7BD0293D8E5FC8524E263B71771AD6CA1AFB15EAF811DA9E1E92A0361141452
+              52AC1DCFBFB705031B24F659BF12E7D93C03ED1489FD609C019FF351D8404B3F
+              7CBAEBFD69B658423FBBFA89EDF00933745AB5D8E9953712FB47925842BFBAFA
+              827C85958D3A94D99EE1D537138F7FAF199C08C6B88D4F3F2EC25E7C88906A8C
+              CF68BEA29F4D24DC6F9323D3CD8B7589E3176B9C0FBCE3043DFCD8C1E360C09A
+              37F673200C5B6A55FF167C9EE36CEC87043EBE551C62CEEC60E683ABA056F09E
+              F48F3FFABBCFB8715C5FE6C022F611F6DA4C9FB8DB3FAEAC5E35B0517FFFFD77
+              7CB943BFD811F12F79C43C1826D6980D2DB5EDF5781B2D356D744D8F59E23962
+              1CD98A8F91529DE659F4B389A4099B78B179C187DAC0ABC4D5414CD8442BAE8D
+              BB25F1B1ADE2E0BB9B7785F6193712091B6AD90F16B28F74EFCA1BB8DBFF576C
+              56800D9B3730AFBCD009431EDC3EE30A8CB58EE8B2436743C7FD657310CD6142
+              CD18F324AF1C13D98A17935A3100D58C3072D5CF267AF8A4FFE5E60561B4DB3C
+              617C033A867C004B7C1AF27C753E57C78C055CAD1B417F5773AFA8C6BF9D5F8F
+              FAC1FB740E913BFD6B6CBE1A83F0D5CA32173731E1B9E0CBDF6244AB06512C27
+              1527B1F29B7137FE49E839B873127E14E2BACDF85EE6F2CD1837F13739F6D571
+              BC3A0E3B7985BC89C9B798D88B37A61DF5C09517B0BBF12F2E71EB057B666052
+              DA73FB8C57BCB1152F46B58B71E6BF8C8F70F3C5ED16B7E3D9466C9B7792E0D1
+              8D2C19F089C4596C1869C9437D0B316F95E3ACDF19B3F1ECE4636C5BF28AB0DC
+              655FB30110663EF39BB11D2F8EEA2B8ED1F7DDE227BC4B3CC70EEE8C1F67C26A
+              7BE13C596D403D934E125CDDC0989B04B498DC4EE8102ACE4EE405481863D88E
+              7A79EF89F7A0F6C9F10A7E18E59F2A576399CE81F85C5ADF2B7FF8AEFA5BFD1C
+              D83EF9B1E4EB11D5E8B87C6CDBF10869D507FA8FF18FF41F78B7F9CB51690706
+              21AD7AA1FFEA2CC0077899CA0F94FAC273163F837393208D8B73BD8A777DA97F
+              21F787F6D51C03BE999660E365A11E85363609FD1DC63DDBC076F290EB0B371C
+              66AF2FE365466D52E278B9FF1C7FB5FFC477377FE0E788C2CD1B3771B4970C09
+              52094E138C4828075E9657E12610723CDA94331EEA3B32F9BE0590E36EE95166
+              7984B3F86A03C3DB6A58302E9AE97646D1FA3A86AFE3E1EE55FB79E7C5FE63BC
+              360EE17BE3A7F3D5FE9D6F36FF6F017EF42145291C394A0A9092D56D1627B2AA
+              CC66ED85803C9CA713AFBA14EA9D389E253947266FE0F1E4B595B13A30DBAAE3
+              B6BEF3F075FCE16B63C704CBF86845F56AFF745A4C60197F1EBE8EBF33FF102A
+              21D660092C1593150C095209C49EE3F9E583993888A1844E9E05525A6A74697D
+              8FE53B20DD583FD6EF2884EFB1BD5C0E0C4B8DF5852FC47F463CC4EC7D173A0C
+              E011AE860F2731CE97AB09A2FB03E107BE83F9571B336EDE33AA78DD135729D2
+              24E0706F410F30E5AA7C53743E58C295F0C328962BE08F0DFB1BBEC5F53FFFE3
+              5AE9C8CE057D02D5CC9A511360D7C7134812E359EB3577E2ED25D3891FA9B693
+              FA243E7635780DE17BFDD3F9CAF8F7C2A7F1A07987B0ADF94BE72D847D83B1FF
+              681989F1B304457C0F2B62DC3F8C60609E6B810F81B11EC36EB059A0DE460371
+              9A029633929FC6FAD5F494B879E326AEE68C39AA8F6CDE7FFEEB5FAA638CC7E9
+              2C0F53950DD7BE938924874D382EDE819BF1E306120E9BF89DE315C450FFB6F1
+              87F58BD936C6AF48AC86C9A98C01A94E722D632217E3E96EC02DB411373A18F8
+              3EB09E17E8A653B91EF0A130CE43F0649BD7D2AE719F9663272612E2CF079CE0
+              86DFD9C091B30DAC278E489B1412B7E3C64EC6C58BDC8D077D03C0CFEBC3261C
+              8A036F127FA8BF4DFC74FD3C527163153F22AF019FF0BD7AFDDE7CE2B7A7C673
+              9CAAD34600FAA88B7E5E3DE43A23C5790C9A5FE58521A6AB099B8FB40DCC7205
+              7C428EE91538EAB9595172230A1A5FCD1973C4F9D0E2E44AFC9BFF6284CF1FF4
+              9AC02CD46962756607E3C265EEC69371130069A74DB8CAF126F18AB557B1E0D1
+              78776AF661FD4EC78F0D97E106B45F90E9409737F1E3F1C7B86BC471E89CCFF0
+              13B8F58F10A876379F10FB04A71B989B111B0A3E21CF7403FFCFFFD8E603FFFA
+              578F0F68FC6CCE9867DCC4E8076DF88B4DE71027A2895C6FAB22689B1D1C6322
+              77E349DF0089CD4DF866F177C77F77FD96E3E71593541B0F400FAA0DFC787C9E
+              F098BB73E6A76B7086AF11633560B6F12261D3656E6D60AD5D60E70A4C783E4C
+              E856D9D97A0B9793B513685CB40377E313C74DE0F1A25583B456B9DE2C5EEBE7
+              5C8EDF5D3FA93507D1F47CD880246FC448DEB8E46E7C1FD7CC4E567E7D0CE730
+              FE9198CC9D0D0CB63EC8426CDABC60B98123E185AB0EC049244513E2ED53EEC6
+              27865C505CE4BB8BDF5D3F694039E806B0192178C48DB9CBDDF8EF13CCF3AA44
+              2AFB4C22957D2544DBB35724E2E7CFB0FBAF7037FE3F9DC7D72F6EBCF95573CE
+              DDF817EFC2EBC07C7386BF4438A17D32FDE21A796D5FEB7881BC78AB1315B64A
+              1EE55979DE016C605C665952A2FEA3CFE1C3A16B26AB873B9856520F871F85FC
+              8A1427176D33FD0AC4E41CB3585FDF8EDF32829DFEC66081E97A9A819D9CEFC4
+              D615184F8F8C79B5E63F2A7E2E61DA5F3FFDEB5FFF6A1F1EFD8F7E25B17D532B
+              AFCBD971B8B28E55AEBBF191692E7C9A86E09C60A65F71C8E16505167D803A94
+              EA31079F20E2135C2DD19628C6B53AEDE183A20FC26FBAB6A02A6F5C81197735
+              36C65572952A07A4A2F2A97433C2BA1DCE59B1983D9C1FDF3DAB57A1689BE957
+              3006FEB15EA1ABCAAB6EAF4F3ED31FDF1362536A05A51C34AD67ECE37FF8E1DB
+              4EAA9A8D2591AF9067EF47AFFB7FFDFA0FBD52FC53C6F877193F4AF00F5D07FC
+              1CE7A12BF023C78C54B1CFCE3783BED1AFD255E0D4D12BAC1C657DE07CE01518
+              F4ABF1DFF395388EF18C6A1CDF3A5E13640133FD0EF43D8BC1063E6027F70874
+              260DBFB20EE32BC5AEC2B32BDA61E3493BEB40A52333FFAC8F6DBB02CB165501
+              6CA374DF14BF05E31E89AFE22ADD0E57E32ADFDDF8B67EA8A3344C4F1DFD508A
+              FC30B4C9050133FD0EBB31714183D41B98A5F800DF98FB25622C3412375ADC60
+              15957D370665F4B5F9608DB969590271A8E40CFA5C8989547195EE8C3B3191DD
+              1C58315DB7AAE4796C6B7BC8C9F64C76A96229BB54B1511A8FDC3E90F2325E80
+              DC67BEBAC219DC3EE2F672BCB53E7E354836A5965164B34239416D694CC3A63A
+              19AF6EC222FECAED357D7105FEBB7EC0F2BBCC13B7CD28D52262CB626F296C8D
+              A61FC244CCD1CAC82A2692E3228FE4D88D018C8B31956E46EB976B87307C1739
+              DE3E43EFE7D595B17D38F00BFD3A4D4C2C12DBD9E6B4859AC313369EB873B0A0
+              5188BE5CDAD190F21F4D3A7DE376197DC718B3CFD91BEF35E639B179F11E189B
+              972546184F400325D6421BB37C39E02EC811F3CCFA8D449F678C6117CE5DFBC4
+              A6C579C4CD0B23CA71891A50EE4A45E537938ACA6F268DBDBFC8710F5F299CC0
+              EB8DC18D1A372CC81B1B3212372E658E6DE4B34D3AB3EB3C0E47DF74AB9839B8
+              ABF8FBDF71B2F5D24018BA62786E5FE6E1C00BC43E8A757A373EEB6695F38857
+              5E0CC62E463887CC479F0DD477A5A2F29B4945E5379303EDFD41250BDB043DC9
+              5DD826E5C90C5D21C7F7C011CF75788F8B92B1319FB5CDD6E52AAB9847F22988
+              2BC5A86D2215955F941D2AFF4A97D9F139A38ADFC9491FFA1DDEF31A3C0F0EF9
+              A89BC915DE223E4AA3DD42DBADC501DDED13DB04DD181277F67E7080AF2C5994
+              3B57603F622AD6CEB7D35759CDEBD29C239C6F141F33AA183FE7427D0903B244
+              A6C14EB6A31D75391FC83E20B777617EE6649EAADFCCE083F7BA582BBEE78519
+              A78E9F3F391FDA2BB9C25BC44769E82DB4DD560C44C7562FFCDE053B71471999
+              6FE0BCF129DF0718A79D78C7F2125702E0BB928ACA0FF2285773F18488A51E66
+              3BDEBD84DE2583985DA9A8FC665251F9CDA48189E016235F65CB09EEF9F10A5C
+              D5B5AC724FD8B925D57C859FDC4B9F5C65EDBDE6C357CDF7C05FAB4E3F85CEF3
+              5FD9221F6DEEABB1926ACCB6309DDCFE61C124AB459B2D5266B2488F6CD667B3
+              B3F9C187DEC0E0C2BAFF4712D707EB92DB2F5EBC78F1E2C58B174FC66F31E2ED
+              E687BFA57C33FCC7505EB7B242FC5EB7662F3E12D8C09406EA2BB984EC07FD8E
+              AF37DF823CBE3329B05F2C80A08E0D6D1F7A77EC67CCB3F8067D56F2E2C56D56
+              DFC4C25566259790CDFBD96576F2E613FBEA895E8D712553F849BB6CD64FBFFF
+              2E23567A88FF386D35B6DC57252F5E7C5F6C5C81B9692957C8B167526057D778
+              0546DBAEC406DA495EBCF8F1D9D8BCE45B6E0CDDBCB651FDF77475139BC48D0C
+              E06F616DCC57E4C58BDBF82D743F49ADFD3660139F6CE468BB3A16F85F910C36
+              ACFE6610BFA9855BE9F8C5157CB085FF94AB20DF1EEFC88B17B7F113296EDCF6
+              096B759247AA93903139C7CE09BB88E5F8DEECD3DFB67941FC43680065FC54DA
+              BEE1557E23EA00AEDAF527DAAF4FB25FDCE7D91F62518F0D7765F3829C37B471
+              B2AB306705FBDC1572D8BC206EDE9A98E2909B326CFCBE695F9BF7C573E02D34
+              37C8334EAC98E38927AADEE2AFF2C1764588FDDEA8C0CD4BB879E52A2A57DD7C
+              198D290EB9292F5EBC29AB2BF0A3E895C789F51B9C6E5E80BEAE4844DEF68EE9
+              C7CDDB43FA1535A7A8A96F9F5FBC780E7ED696EF811F81799823B71FE469E33B
+              039F347B159B8F9B177CD69F09E33F58663BBC070EE31B0863E58BD0D68BD18B
+              1757D093CAA581FA4A3E1AD5185772001F3849E13F3AE237B05892DE860FE2F6
+              E0DA0E6BFCE2C52DDEED9B58EF4035C69594605FDA95D7156D8F3224B75FBCF8
+              76BCC58758DF3DE3C575B671D9561890E5C58B37E5B561471ED974AF357CF18D
+              F8F4E9FF031C3AC86038B713340000000049454E44AE426082}
+            FileName = 'C:\C\INSTALL\ButtonsJayaShrilaPrabhupada.bmp'
+          end>
+        Name = 'ButtonsJayaShrilaPrabhupada'
+      end>
+    Destination = <
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 16.000000000000000000
+            SourceRect.Right = 32.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 32.000000000000000000
+            SourceRect.Right = 48.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 48.000000000000000000
+            SourceRect.Right = 64.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 64.000000000000000000
+            SourceRect.Right = 80.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 80.000000000000000000
+            SourceRect.Right = 96.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 96.000000000000000000
+            SourceRect.Right = 112.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 112.000000000000000000
+            SourceRect.Right = 128.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 128.000000000000000000
+            SourceRect.Right = 144.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 144.000000000000000000
+            SourceRect.Right = 160.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 160.000000000000000000
+            SourceRect.Right = 176.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 176.000000000000000000
+            SourceRect.Right = 192.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 192.000000000000000000
+            SourceRect.Right = 208.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 208.000000000000000000
+            SourceRect.Right = 224.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 224.000000000000000000
+            SourceRect.Right = 240.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Top = 16.000000000000000000
+            SourceRect.Bottom = 32.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 16.000000000000000000
+            SourceRect.Top = 16.000000000000000000
+            SourceRect.Right = 32.000000000000000000
+            SourceRect.Bottom = 32.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 32.000000000000000000
+            SourceRect.Top = 16.000000000000000000
+            SourceRect.Right = 48.000000000000000000
+            SourceRect.Bottom = 32.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 48.000000000000000000
+            SourceRect.Top = 16.000000000000000000
+            SourceRect.Right = 64.000000000000000000
+            SourceRect.Bottom = 32.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 64.000000000000000000
+            SourceRect.Top = 16.000000000000000000
+            SourceRect.Right = 80.000000000000000000
+            SourceRect.Bottom = 32.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 80.000000000000000000
+            SourceRect.Top = 16.000000000000000000
+            SourceRect.Right = 96.000000000000000000
+            SourceRect.Bottom = 32.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 96.000000000000000000
+            SourceRect.Top = 16.000000000000000000
+            SourceRect.Right = 112.000000000000000000
+            SourceRect.Bottom = 32.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 112.000000000000000000
+            SourceRect.Top = 16.000000000000000000
+            SourceRect.Right = 128.000000000000000000
+            SourceRect.Bottom = 32.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 128.000000000000000000
+            SourceRect.Top = 16.000000000000000000
+            SourceRect.Right = 144.000000000000000000
+            SourceRect.Bottom = 32.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 144.000000000000000000
+            SourceRect.Top = 16.000000000000000000
+            SourceRect.Right = 160.000000000000000000
+            SourceRect.Bottom = 32.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 160.000000000000000000
+            SourceRect.Top = 16.000000000000000000
+            SourceRect.Right = 176.000000000000000000
+            SourceRect.Bottom = 32.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 176.000000000000000000
+            SourceRect.Top = 16.000000000000000000
+            SourceRect.Right = 192.000000000000000000
+            SourceRect.Bottom = 32.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 192.000000000000000000
+            SourceRect.Top = 16.000000000000000000
+            SourceRect.Right = 208.000000000000000000
+            SourceRect.Bottom = 32.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 208.000000000000000000
+            SourceRect.Top = 16.000000000000000000
+            SourceRect.Right = 224.000000000000000000
+            SourceRect.Bottom = 32.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 224.000000000000000000
+            SourceRect.Top = 16.000000000000000000
+            SourceRect.Right = 240.000000000000000000
+            SourceRect.Bottom = 32.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Top = 32.000000000000000000
+            SourceRect.Bottom = 48.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 16.000000000000000000
+            SourceRect.Top = 32.000000000000000000
+            SourceRect.Right = 32.000000000000000000
+            SourceRect.Bottom = 48.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 32.000000000000000000
+            SourceRect.Top = 32.000000000000000000
+            SourceRect.Right = 48.000000000000000000
+            SourceRect.Bottom = 48.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 48.000000000000000000
+            SourceRect.Top = 32.000000000000000000
+            SourceRect.Right = 64.000000000000000000
+            SourceRect.Bottom = 48.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 64.000000000000000000
+            SourceRect.Top = 32.000000000000000000
+            SourceRect.Right = 80.000000000000000000
+            SourceRect.Bottom = 48.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 80.000000000000000000
+            SourceRect.Top = 32.000000000000000000
+            SourceRect.Right = 96.000000000000000000
+            SourceRect.Bottom = 48.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 96.000000000000000000
+            SourceRect.Top = 32.000000000000000000
+            SourceRect.Right = 112.000000000000000000
+            SourceRect.Bottom = 48.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 112.000000000000000000
+            SourceRect.Top = 32.000000000000000000
+            SourceRect.Right = 128.000000000000000000
+            SourceRect.Bottom = 48.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 128.000000000000000000
+            SourceRect.Top = 32.000000000000000000
+            SourceRect.Right = 144.000000000000000000
+            SourceRect.Bottom = 48.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 144.000000000000000000
+            SourceRect.Top = 32.000000000000000000
+            SourceRect.Right = 160.000000000000000000
+            SourceRect.Bottom = 48.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 160.000000000000000000
+            SourceRect.Top = 32.000000000000000000
+            SourceRect.Right = 176.000000000000000000
+            SourceRect.Bottom = 48.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 176.000000000000000000
+            SourceRect.Top = 32.000000000000000000
+            SourceRect.Right = 192.000000000000000000
+            SourceRect.Bottom = 48.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 192.000000000000000000
+            SourceRect.Top = 32.000000000000000000
+            SourceRect.Right = 208.000000000000000000
+            SourceRect.Bottom = 48.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 208.000000000000000000
+            SourceRect.Top = 32.000000000000000000
+            SourceRect.Right = 224.000000000000000000
+            SourceRect.Bottom = 48.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 224.000000000000000000
+            SourceRect.Top = 32.000000000000000000
+            SourceRect.Right = 240.000000000000000000
+            SourceRect.Bottom = 48.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Top = 48.000000000000000000
+            SourceRect.Bottom = 64.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 16.000000000000000000
+            SourceRect.Top = 48.000000000000000000
+            SourceRect.Right = 32.000000000000000000
+            SourceRect.Bottom = 64.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 32.000000000000000000
+            SourceRect.Top = 48.000000000000000000
+            SourceRect.Right = 48.000000000000000000
+            SourceRect.Bottom = 64.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 48.000000000000000000
+            SourceRect.Top = 48.000000000000000000
+            SourceRect.Right = 64.000000000000000000
+            SourceRect.Bottom = 64.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 64.000000000000000000
+            SourceRect.Top = 48.000000000000000000
+            SourceRect.Right = 80.000000000000000000
+            SourceRect.Bottom = 64.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 80.000000000000000000
+            SourceRect.Top = 48.000000000000000000
+            SourceRect.Right = 96.000000000000000000
+            SourceRect.Bottom = 64.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 96.000000000000000000
+            SourceRect.Top = 48.000000000000000000
+            SourceRect.Right = 112.000000000000000000
+            SourceRect.Bottom = 64.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 112.000000000000000000
+            SourceRect.Top = 48.000000000000000000
+            SourceRect.Right = 128.000000000000000000
+            SourceRect.Bottom = 64.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 128.000000000000000000
+            SourceRect.Top = 48.000000000000000000
+            SourceRect.Right = 144.000000000000000000
+            SourceRect.Bottom = 64.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 144.000000000000000000
+            SourceRect.Top = 48.000000000000000000
+            SourceRect.Right = 160.000000000000000000
+            SourceRect.Bottom = 64.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 160.000000000000000000
+            SourceRect.Top = 48.000000000000000000
+            SourceRect.Right = 176.000000000000000000
+            SourceRect.Bottom = 64.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 176.000000000000000000
+            SourceRect.Top = 48.000000000000000000
+            SourceRect.Right = 192.000000000000000000
+            SourceRect.Bottom = 64.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 192.000000000000000000
+            SourceRect.Top = 48.000000000000000000
+            SourceRect.Right = 208.000000000000000000
+            SourceRect.Bottom = 64.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 208.000000000000000000
+            SourceRect.Top = 48.000000000000000000
+            SourceRect.Right = 224.000000000000000000
+            SourceRect.Bottom = 64.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 224.000000000000000000
+            SourceRect.Top = 48.000000000000000000
+            SourceRect.Right = 240.000000000000000000
+            SourceRect.Bottom = 64.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Top = 64.000000000000000000
+            SourceRect.Bottom = 80.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 16.000000000000000000
+            SourceRect.Top = 64.000000000000000000
+            SourceRect.Right = 32.000000000000000000
+            SourceRect.Bottom = 80.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 32.000000000000000000
+            SourceRect.Top = 64.000000000000000000
+            SourceRect.Right = 48.000000000000000000
+            SourceRect.Bottom = 80.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 48.000000000000000000
+            SourceRect.Top = 64.000000000000000000
+            SourceRect.Right = 64.000000000000000000
+            SourceRect.Bottom = 80.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 64.000000000000000000
+            SourceRect.Top = 64.000000000000000000
+            SourceRect.Right = 80.000000000000000000
+            SourceRect.Bottom = 80.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 80.000000000000000000
+            SourceRect.Top = 64.000000000000000000
+            SourceRect.Right = 96.000000000000000000
+            SourceRect.Bottom = 80.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 96.000000000000000000
+            SourceRect.Top = 64.000000000000000000
+            SourceRect.Right = 112.000000000000000000
+            SourceRect.Bottom = 80.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 112.000000000000000000
+            SourceRect.Top = 64.000000000000000000
+            SourceRect.Right = 128.000000000000000000
+            SourceRect.Bottom = 80.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 128.000000000000000000
+            SourceRect.Top = 64.000000000000000000
+            SourceRect.Right = 144.000000000000000000
+            SourceRect.Bottom = 80.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 144.000000000000000000
+            SourceRect.Top = 64.000000000000000000
+            SourceRect.Right = 160.000000000000000000
+            SourceRect.Bottom = 80.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 160.000000000000000000
+            SourceRect.Top = 64.000000000000000000
+            SourceRect.Right = 176.000000000000000000
+            SourceRect.Bottom = 80.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 176.000000000000000000
+            SourceRect.Top = 64.000000000000000000
+            SourceRect.Right = 192.000000000000000000
+            SourceRect.Bottom = 80.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 192.000000000000000000
+            SourceRect.Top = 64.000000000000000000
+            SourceRect.Right = 208.000000000000000000
+            SourceRect.Bottom = 80.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 208.000000000000000000
+            SourceRect.Top = 64.000000000000000000
+            SourceRect.Right = 224.000000000000000000
+            SourceRect.Bottom = 80.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 224.000000000000000000
+            SourceRect.Top = 64.000000000000000000
+            SourceRect.Right = 240.000000000000000000
+            SourceRect.Bottom = 80.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Top = 80.000000000000000000
+            SourceRect.Bottom = 96.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 16.000000000000000000
+            SourceRect.Top = 80.000000000000000000
+            SourceRect.Right = 32.000000000000000000
+            SourceRect.Bottom = 96.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 32.000000000000000000
+            SourceRect.Top = 80.000000000000000000
+            SourceRect.Right = 48.000000000000000000
+            SourceRect.Bottom = 96.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 48.000000000000000000
+            SourceRect.Top = 80.000000000000000000
+            SourceRect.Right = 64.000000000000000000
+            SourceRect.Bottom = 96.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 64.000000000000000000
+            SourceRect.Top = 80.000000000000000000
+            SourceRect.Right = 80.000000000000000000
+            SourceRect.Bottom = 96.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 80.000000000000000000
+            SourceRect.Top = 80.000000000000000000
+            SourceRect.Right = 96.000000000000000000
+            SourceRect.Bottom = 96.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 96.000000000000000000
+            SourceRect.Top = 80.000000000000000000
+            SourceRect.Right = 112.000000000000000000
+            SourceRect.Bottom = 96.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 112.000000000000000000
+            SourceRect.Top = 80.000000000000000000
+            SourceRect.Right = 128.000000000000000000
+            SourceRect.Bottom = 96.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 128.000000000000000000
+            SourceRect.Top = 80.000000000000000000
+            SourceRect.Right = 144.000000000000000000
+            SourceRect.Bottom = 96.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 144.000000000000000000
+            SourceRect.Top = 80.000000000000000000
+            SourceRect.Right = 160.000000000000000000
+            SourceRect.Bottom = 96.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 160.000000000000000000
+            SourceRect.Top = 80.000000000000000000
+            SourceRect.Right = 176.000000000000000000
+            SourceRect.Bottom = 96.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 176.000000000000000000
+            SourceRect.Top = 80.000000000000000000
+            SourceRect.Right = 192.000000000000000000
+            SourceRect.Bottom = 96.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 192.000000000000000000
+            SourceRect.Top = 80.000000000000000000
+            SourceRect.Right = 208.000000000000000000
+            SourceRect.Bottom = 96.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 208.000000000000000000
+            SourceRect.Top = 80.000000000000000000
+            SourceRect.Right = 224.000000000000000000
+            SourceRect.Bottom = 96.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 224.000000000000000000
+            SourceRect.Top = 80.000000000000000000
+            SourceRect.Right = 240.000000000000000000
+            SourceRect.Bottom = 96.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Top = 96.000000000000000000
+            SourceRect.Bottom = 112.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 16.000000000000000000
+            SourceRect.Top = 96.000000000000000000
+            SourceRect.Right = 32.000000000000000000
+            SourceRect.Bottom = 112.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 32.000000000000000000
+            SourceRect.Top = 96.000000000000000000
+            SourceRect.Right = 48.000000000000000000
+            SourceRect.Bottom = 112.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 48.000000000000000000
+            SourceRect.Top = 96.000000000000000000
+            SourceRect.Right = 64.000000000000000000
+            SourceRect.Bottom = 112.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 64.000000000000000000
+            SourceRect.Top = 96.000000000000000000
+            SourceRect.Right = 80.000000000000000000
+            SourceRect.Bottom = 112.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 80.000000000000000000
+            SourceRect.Top = 96.000000000000000000
+            SourceRect.Right = 96.000000000000000000
+            SourceRect.Bottom = 112.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 96.000000000000000000
+            SourceRect.Top = 96.000000000000000000
+            SourceRect.Right = 112.000000000000000000
+            SourceRect.Bottom = 112.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 112.000000000000000000
+            SourceRect.Top = 96.000000000000000000
+            SourceRect.Right = 128.000000000000000000
+            SourceRect.Bottom = 112.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 128.000000000000000000
+            SourceRect.Top = 96.000000000000000000
+            SourceRect.Right = 144.000000000000000000
+            SourceRect.Bottom = 112.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 144.000000000000000000
+            SourceRect.Top = 96.000000000000000000
+            SourceRect.Right = 160.000000000000000000
+            SourceRect.Bottom = 112.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 160.000000000000000000
+            SourceRect.Top = 96.000000000000000000
+            SourceRect.Right = 176.000000000000000000
+            SourceRect.Bottom = 112.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 176.000000000000000000
+            SourceRect.Top = 96.000000000000000000
+            SourceRect.Right = 192.000000000000000000
+            SourceRect.Bottom = 112.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 192.000000000000000000
+            SourceRect.Top = 96.000000000000000000
+            SourceRect.Right = 208.000000000000000000
+            SourceRect.Bottom = 112.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 208.000000000000000000
+            SourceRect.Top = 96.000000000000000000
+            SourceRect.Right = 224.000000000000000000
+            SourceRect.Bottom = 112.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 224.000000000000000000
+            SourceRect.Top = 96.000000000000000000
+            SourceRect.Right = 240.000000000000000000
+            SourceRect.Bottom = 112.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Top = 112.000000000000000000
+            SourceRect.Bottom = 128.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 16.000000000000000000
+            SourceRect.Top = 112.000000000000000000
+            SourceRect.Right = 32.000000000000000000
+            SourceRect.Bottom = 128.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 32.000000000000000000
+            SourceRect.Top = 112.000000000000000000
+            SourceRect.Right = 48.000000000000000000
+            SourceRect.Bottom = 128.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 48.000000000000000000
+            SourceRect.Top = 112.000000000000000000
+            SourceRect.Right = 64.000000000000000000
+            SourceRect.Bottom = 128.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 64.000000000000000000
+            SourceRect.Top = 112.000000000000000000
+            SourceRect.Right = 80.000000000000000000
+            SourceRect.Bottom = 128.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 80.000000000000000000
+            SourceRect.Top = 112.000000000000000000
+            SourceRect.Right = 96.000000000000000000
+            SourceRect.Bottom = 128.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 96.000000000000000000
+            SourceRect.Top = 112.000000000000000000
+            SourceRect.Right = 112.000000000000000000
+            SourceRect.Bottom = 128.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 112.000000000000000000
+            SourceRect.Top = 112.000000000000000000
+            SourceRect.Right = 128.000000000000000000
+            SourceRect.Bottom = 128.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 128.000000000000000000
+            SourceRect.Top = 112.000000000000000000
+            SourceRect.Right = 144.000000000000000000
+            SourceRect.Bottom = 128.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 144.000000000000000000
+            SourceRect.Top = 112.000000000000000000
+            SourceRect.Right = 160.000000000000000000
+            SourceRect.Bottom = 128.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 160.000000000000000000
+            SourceRect.Top = 112.000000000000000000
+            SourceRect.Right = 176.000000000000000000
+            SourceRect.Bottom = 128.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 176.000000000000000000
+            SourceRect.Top = 112.000000000000000000
+            SourceRect.Right = 192.000000000000000000
+            SourceRect.Bottom = 128.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 192.000000000000000000
+            SourceRect.Top = 112.000000000000000000
+            SourceRect.Right = 208.000000000000000000
+            SourceRect.Bottom = 128.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 208.000000000000000000
+            SourceRect.Top = 112.000000000000000000
+            SourceRect.Right = 224.000000000000000000
+            SourceRect.Bottom = 128.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 224.000000000000000000
+            SourceRect.Top = 112.000000000000000000
+            SourceRect.Right = 240.000000000000000000
+            SourceRect.Bottom = 128.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Top = 128.000000000000000000
+            SourceRect.Bottom = 144.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 16.000000000000000000
+            SourceRect.Top = 128.000000000000000000
+            SourceRect.Right = 32.000000000000000000
+            SourceRect.Bottom = 144.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 32.000000000000000000
+            SourceRect.Top = 128.000000000000000000
+            SourceRect.Right = 48.000000000000000000
+            SourceRect.Bottom = 144.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 48.000000000000000000
+            SourceRect.Top = 128.000000000000000000
+            SourceRect.Right = 64.000000000000000000
+            SourceRect.Bottom = 144.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 64.000000000000000000
+            SourceRect.Top = 128.000000000000000000
+            SourceRect.Right = 80.000000000000000000
+            SourceRect.Bottom = 144.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 80.000000000000000000
+            SourceRect.Top = 128.000000000000000000
+            SourceRect.Right = 96.000000000000000000
+            SourceRect.Bottom = 144.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 96.000000000000000000
+            SourceRect.Top = 128.000000000000000000
+            SourceRect.Right = 112.000000000000000000
+            SourceRect.Bottom = 144.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 112.000000000000000000
+            SourceRect.Top = 128.000000000000000000
+            SourceRect.Right = 128.000000000000000000
+            SourceRect.Bottom = 144.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 128.000000000000000000
+            SourceRect.Top = 128.000000000000000000
+            SourceRect.Right = 144.000000000000000000
+            SourceRect.Bottom = 144.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 144.000000000000000000
+            SourceRect.Top = 128.000000000000000000
+            SourceRect.Right = 160.000000000000000000
+            SourceRect.Bottom = 144.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 160.000000000000000000
+            SourceRect.Top = 128.000000000000000000
+            SourceRect.Right = 176.000000000000000000
+            SourceRect.Bottom = 144.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 176.000000000000000000
+            SourceRect.Top = 128.000000000000000000
+            SourceRect.Right = 192.000000000000000000
+            SourceRect.Bottom = 144.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 192.000000000000000000
+            SourceRect.Top = 128.000000000000000000
+            SourceRect.Right = 208.000000000000000000
+            SourceRect.Bottom = 144.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 208.000000000000000000
+            SourceRect.Top = 128.000000000000000000
+            SourceRect.Right = 224.000000000000000000
+            SourceRect.Bottom = 144.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 224.000000000000000000
+            SourceRect.Top = 128.000000000000000000
+            SourceRect.Right = 240.000000000000000000
+            SourceRect.Bottom = 144.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Top = 144.000000000000000000
+            SourceRect.Bottom = 160.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 16.000000000000000000
+            SourceRect.Top = 144.000000000000000000
+            SourceRect.Right = 32.000000000000000000
+            SourceRect.Bottom = 160.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 32.000000000000000000
+            SourceRect.Top = 144.000000000000000000
+            SourceRect.Right = 48.000000000000000000
+            SourceRect.Bottom = 160.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 48.000000000000000000
+            SourceRect.Top = 144.000000000000000000
+            SourceRect.Right = 64.000000000000000000
+            SourceRect.Bottom = 160.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 64.000000000000000000
+            SourceRect.Top = 144.000000000000000000
+            SourceRect.Right = 80.000000000000000000
+            SourceRect.Bottom = 160.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 80.000000000000000000
+            SourceRect.Top = 144.000000000000000000
+            SourceRect.Right = 96.000000000000000000
+            SourceRect.Bottom = 160.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 96.000000000000000000
+            SourceRect.Top = 144.000000000000000000
+            SourceRect.Right = 112.000000000000000000
+            SourceRect.Bottom = 160.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 112.000000000000000000
+            SourceRect.Top = 144.000000000000000000
+            SourceRect.Right = 128.000000000000000000
+            SourceRect.Bottom = 160.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 128.000000000000000000
+            SourceRect.Top = 144.000000000000000000
+            SourceRect.Right = 144.000000000000000000
+            SourceRect.Bottom = 160.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 144.000000000000000000
+            SourceRect.Top = 144.000000000000000000
+            SourceRect.Right = 160.000000000000000000
+            SourceRect.Bottom = 160.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 160.000000000000000000
+            SourceRect.Top = 144.000000000000000000
+            SourceRect.Right = 176.000000000000000000
+            SourceRect.Bottom = 160.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 176.000000000000000000
+            SourceRect.Top = 144.000000000000000000
+            SourceRect.Right = 192.000000000000000000
+            SourceRect.Bottom = 160.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 192.000000000000000000
+            SourceRect.Top = 144.000000000000000000
+            SourceRect.Right = 208.000000000000000000
+            SourceRect.Bottom = 160.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 208.000000000000000000
+            SourceRect.Top = 144.000000000000000000
+            SourceRect.Right = 224.000000000000000000
+            SourceRect.Bottom = 160.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 224.000000000000000000
+            SourceRect.Top = 144.000000000000000000
+            SourceRect.Right = 240.000000000000000000
+            SourceRect.Bottom = 160.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Top = 160.000000000000000000
+            SourceRect.Bottom = 176.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 16.000000000000000000
+            SourceRect.Top = 160.000000000000000000
+            SourceRect.Right = 32.000000000000000000
+            SourceRect.Bottom = 176.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 32.000000000000000000
+            SourceRect.Top = 160.000000000000000000
+            SourceRect.Right = 48.000000000000000000
+            SourceRect.Bottom = 176.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 48.000000000000000000
+            SourceRect.Top = 160.000000000000000000
+            SourceRect.Right = 64.000000000000000000
+            SourceRect.Bottom = 176.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 64.000000000000000000
+            SourceRect.Top = 160.000000000000000000
+            SourceRect.Right = 80.000000000000000000
+            SourceRect.Bottom = 176.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 80.000000000000000000
+            SourceRect.Top = 160.000000000000000000
+            SourceRect.Right = 96.000000000000000000
+            SourceRect.Bottom = 176.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 96.000000000000000000
+            SourceRect.Top = 160.000000000000000000
+            SourceRect.Right = 112.000000000000000000
+            SourceRect.Bottom = 176.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 112.000000000000000000
+            SourceRect.Top = 160.000000000000000000
+            SourceRect.Right = 128.000000000000000000
+            SourceRect.Bottom = 176.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 128.000000000000000000
+            SourceRect.Top = 160.000000000000000000
+            SourceRect.Right = 144.000000000000000000
+            SourceRect.Bottom = 176.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 144.000000000000000000
+            SourceRect.Top = 160.000000000000000000
+            SourceRect.Right = 160.000000000000000000
+            SourceRect.Bottom = 176.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 160.000000000000000000
+            SourceRect.Top = 160.000000000000000000
+            SourceRect.Right = 176.000000000000000000
+            SourceRect.Bottom = 176.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 176.000000000000000000
+            SourceRect.Top = 160.000000000000000000
+            SourceRect.Right = 192.000000000000000000
+            SourceRect.Bottom = 176.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 192.000000000000000000
+            SourceRect.Top = 160.000000000000000000
+            SourceRect.Right = 208.000000000000000000
+            SourceRect.Bottom = 176.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 208.000000000000000000
+            SourceRect.Top = 160.000000000000000000
+            SourceRect.Right = 224.000000000000000000
+            SourceRect.Bottom = 176.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 224.000000000000000000
+            SourceRect.Top = 160.000000000000000000
+            SourceRect.Right = 240.000000000000000000
+            SourceRect.Bottom = 176.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Top = 176.000000000000000000
+            SourceRect.Bottom = 192.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 16.000000000000000000
+            SourceRect.Top = 176.000000000000000000
+            SourceRect.Right = 32.000000000000000000
+            SourceRect.Bottom = 192.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 32.000000000000000000
+            SourceRect.Top = 176.000000000000000000
+            SourceRect.Right = 48.000000000000000000
+            SourceRect.Bottom = 192.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 48.000000000000000000
+            SourceRect.Top = 176.000000000000000000
+            SourceRect.Right = 64.000000000000000000
+            SourceRect.Bottom = 192.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 64.000000000000000000
+            SourceRect.Top = 176.000000000000000000
+            SourceRect.Right = 80.000000000000000000
+            SourceRect.Bottom = 192.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 80.000000000000000000
+            SourceRect.Top = 176.000000000000000000
+            SourceRect.Right = 96.000000000000000000
+            SourceRect.Bottom = 192.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 96.000000000000000000
+            SourceRect.Top = 176.000000000000000000
+            SourceRect.Right = 112.000000000000000000
+            SourceRect.Bottom = 192.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 112.000000000000000000
+            SourceRect.Top = 176.000000000000000000
+            SourceRect.Right = 128.000000000000000000
+            SourceRect.Bottom = 192.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 128.000000000000000000
+            SourceRect.Top = 176.000000000000000000
+            SourceRect.Right = 144.000000000000000000
+            SourceRect.Bottom = 192.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 144.000000000000000000
+            SourceRect.Top = 176.000000000000000000
+            SourceRect.Right = 160.000000000000000000
+            SourceRect.Bottom = 192.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 160.000000000000000000
+            SourceRect.Top = 176.000000000000000000
+            SourceRect.Right = 176.000000000000000000
+            SourceRect.Bottom = 192.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 176.000000000000000000
+            SourceRect.Top = 176.000000000000000000
+            SourceRect.Right = 192.000000000000000000
+            SourceRect.Bottom = 192.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 192.000000000000000000
+            SourceRect.Top = 176.000000000000000000
+            SourceRect.Right = 208.000000000000000000
+            SourceRect.Bottom = 192.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 208.000000000000000000
+            SourceRect.Top = 176.000000000000000000
+            SourceRect.Right = 224.000000000000000000
+            SourceRect.Bottom = 192.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 224.000000000000000000
+            SourceRect.Top = 176.000000000000000000
+            SourceRect.Right = 240.000000000000000000
+            SourceRect.Bottom = 192.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Top = 192.000000000000000000
+            SourceRect.Bottom = 208.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 16.000000000000000000
+            SourceRect.Top = 192.000000000000000000
+            SourceRect.Right = 32.000000000000000000
+            SourceRect.Bottom = 208.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 32.000000000000000000
+            SourceRect.Top = 192.000000000000000000
+            SourceRect.Right = 48.000000000000000000
+            SourceRect.Bottom = 208.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 48.000000000000000000
+            SourceRect.Top = 192.000000000000000000
+            SourceRect.Right = 64.000000000000000000
+            SourceRect.Bottom = 208.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 64.000000000000000000
+            SourceRect.Top = 192.000000000000000000
+            SourceRect.Right = 80.000000000000000000
+            SourceRect.Bottom = 208.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 80.000000000000000000
+            SourceRect.Top = 192.000000000000000000
+            SourceRect.Right = 96.000000000000000000
+            SourceRect.Bottom = 208.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 96.000000000000000000
+            SourceRect.Top = 192.000000000000000000
+            SourceRect.Right = 112.000000000000000000
+            SourceRect.Bottom = 208.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 112.000000000000000000
+            SourceRect.Top = 192.000000000000000000
+            SourceRect.Right = 128.000000000000000000
+            SourceRect.Bottom = 208.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 128.000000000000000000
+            SourceRect.Top = 192.000000000000000000
+            SourceRect.Right = 144.000000000000000000
+            SourceRect.Bottom = 208.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 144.000000000000000000
+            SourceRect.Top = 192.000000000000000000
+            SourceRect.Right = 160.000000000000000000
+            SourceRect.Bottom = 208.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 160.000000000000000000
+            SourceRect.Top = 192.000000000000000000
+            SourceRect.Right = 176.000000000000000000
+            SourceRect.Bottom = 208.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 176.000000000000000000
+            SourceRect.Top = 192.000000000000000000
+            SourceRect.Right = 192.000000000000000000
+            SourceRect.Bottom = 208.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 192.000000000000000000
+            SourceRect.Top = 192.000000000000000000
+            SourceRect.Right = 208.000000000000000000
+            SourceRect.Bottom = 208.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 208.000000000000000000
+            SourceRect.Top = 192.000000000000000000
+            SourceRect.Right = 224.000000000000000000
+            SourceRect.Bottom = 208.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 224.000000000000000000
+            SourceRect.Top = 192.000000000000000000
+            SourceRect.Right = 240.000000000000000000
+            SourceRect.Bottom = 208.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Top = 208.000000000000000000
+            SourceRect.Bottom = 224.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 16.000000000000000000
+            SourceRect.Top = 208.000000000000000000
+            SourceRect.Right = 32.000000000000000000
+            SourceRect.Bottom = 224.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 32.000000000000000000
+            SourceRect.Top = 208.000000000000000000
+            SourceRect.Right = 48.000000000000000000
+            SourceRect.Bottom = 224.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 48.000000000000000000
+            SourceRect.Top = 208.000000000000000000
+            SourceRect.Right = 64.000000000000000000
+            SourceRect.Bottom = 224.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 64.000000000000000000
+            SourceRect.Top = 208.000000000000000000
+            SourceRect.Right = 80.000000000000000000
+            SourceRect.Bottom = 224.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 80.000000000000000000
+            SourceRect.Top = 208.000000000000000000
+            SourceRect.Right = 96.000000000000000000
+            SourceRect.Bottom = 224.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 96.000000000000000000
+            SourceRect.Top = 208.000000000000000000
+            SourceRect.Right = 112.000000000000000000
+            SourceRect.Bottom = 224.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 112.000000000000000000
+            SourceRect.Top = 208.000000000000000000
+            SourceRect.Right = 128.000000000000000000
+            SourceRect.Bottom = 224.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 128.000000000000000000
+            SourceRect.Top = 208.000000000000000000
+            SourceRect.Right = 144.000000000000000000
+            SourceRect.Bottom = 224.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 144.000000000000000000
+            SourceRect.Top = 208.000000000000000000
+            SourceRect.Right = 160.000000000000000000
+            SourceRect.Bottom = 224.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 160.000000000000000000
+            SourceRect.Top = 208.000000000000000000
+            SourceRect.Right = 176.000000000000000000
+            SourceRect.Bottom = 224.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 176.000000000000000000
+            SourceRect.Top = 208.000000000000000000
+            SourceRect.Right = 192.000000000000000000
+            SourceRect.Bottom = 224.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 192.000000000000000000
+            SourceRect.Top = 208.000000000000000000
+            SourceRect.Right = 208.000000000000000000
+            SourceRect.Bottom = 224.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 208.000000000000000000
+            SourceRect.Top = 208.000000000000000000
+            SourceRect.Right = 224.000000000000000000
+            SourceRect.Bottom = 224.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 224.000000000000000000
+            SourceRect.Top = 208.000000000000000000
+            SourceRect.Right = 240.000000000000000000
+            SourceRect.Bottom = 224.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Top = 224.000000000000000000
+            SourceRect.Bottom = 240.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 16.000000000000000000
+            SourceRect.Top = 224.000000000000000000
+            SourceRect.Right = 32.000000000000000000
+            SourceRect.Bottom = 240.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 32.000000000000000000
+            SourceRect.Top = 224.000000000000000000
+            SourceRect.Right = 48.000000000000000000
+            SourceRect.Bottom = 240.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 48.000000000000000000
+            SourceRect.Top = 224.000000000000000000
+            SourceRect.Right = 64.000000000000000000
+            SourceRect.Bottom = 240.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 64.000000000000000000
+            SourceRect.Top = 224.000000000000000000
+            SourceRect.Right = 80.000000000000000000
+            SourceRect.Bottom = 240.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ButtonsJayaShrilaPrabhupada'
+            SourceRect.Left = 80.000000000000000000
+            SourceRect.Top = 224.000000000000000000
+            SourceRect.Right = 96.000000000000000000
+            SourceRect.Bottom = 240.000000000000000000
+          end>
+      end>
+    Left = 220
+    Top = 149
+  end
+  object quUpdateSanskrit: TNNFQuery
+    Connection = dmfNewNavadvipa.conDB
+    SQL.Strings = (
+      'update &PRABHUPADA_SCHEMA"SANSKRIT" set'
+      '  "IZNACHALYNO" = :IZNACHALYNO'
+      ', "PEREVOD" = :PEREVOD'
+      'where'
+      '    "ID" = :ID;')
+    Left = 85
+    Top = 197
+    ParamData = <
+      item
+        Name = 'IZNACHALYNO'
+        DataType = ftWideString
+        ParamType = ptInput
+        Value = Null
+      end
+      item
+        Name = 'PEREVOD'
+        DataType = ftWideString
+        ParamType = ptInput
+        Value = Null
+      end
+      item
+        Name = 'ID'
+        DataType = ftInteger
+        ParamType = ptInput
+        Value = Null
+      end>
+    MacroData = <
+      item
+        Value = '"NewNavadvipa".'
+        Name = 'PRABHUPADA_SCHEMA'
+      end>
+  end
+  object quDeleteSanskrit: TNNFQuery
+    Connection = dmfNewNavadvipa.conDB
+    SQL.Strings = (
+      'delete from &PRABHUPADA_SCHEMA."SANSKRIT" where "ID" = :ID;')
+    Left = 113
+    Top = 197
+    ParamData = <
+      item
+        Name = 'ID'
+        DataType = ftInteger
+        ParamType = ptInput
+        Value = Null
+      end>
+    MacroData = <
+      item
+        Value = '"NewNavadvipa".'
+        Name = 'PRABHUPADA_SCHEMA'
+      end>
+  end
+  object quInsertSanskrit: TNNFQuery
+    Connection = dmfNewNavadvipa.conDB
+    SQL.Strings = (
+      'insert into &PRABHUPADA_SCHEMA"SANSKRIT"'
+      '('
+      '  "ID"'
+      ', "IZNACHALYNO"'
+      ', "PEREVOD"'
+      ', "YAZYK"'
+      ')'
+      'values'
+      '('
+      '  :ID'
+      ', :IZNACHALYNO'
+      ', :PEREVOD'
+      ', :YAZYK'
+      ');')
+    Left = 140
+    Top = 197
+    ParamData = <
+      item
+        Name = 'ID'
+        DataType = ftInteger
+        ParamType = ptInput
+        Value = Null
+      end
+      item
+        Name = 'IZNACHALYNO'
+        DataType = ftWideString
+        ParamType = ptInput
+        Value = Null
+      end
+      item
+        Name = 'PEREVOD'
+        DataType = ftWideString
+        ParamType = ptInput
+        Value = Null
+      end
+      item
+        Name = 'YAZYK'
+        DataType = ftWideString
+        ParamType = ptInput
+        Value = Null
+      end>
+    MacroData = <
+      item
+        Value = '"NewNavadvipa".'
+        Name = 'PRABHUPADA_SCHEMA'
+      end>
+  end
+  object quMaxID: TNNFQuery
+    Connection = dmfNewNavadvipa.conDB
+    SQL.Strings = (
+      
+        'select max( a."ID" ) as "MAX_ID" from &PRABHUPADA_SCHEMA"SANSKRI' +
+        'T" a;')
+    Left = 167
+    Top = 196
+    MacroData = <
+      item
+        Value = '"NewNavadvipa".'
+        Name = 'PRABHUPADA_SCHEMA'
+      end>
+  end
+end

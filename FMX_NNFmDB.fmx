@@ -1,0 +1,100 @@
+inherited fmfDB: TfmfDB
+  Caption = 'fmfDB'
+  ClientHeight = 774
+  ClientWidth = 1185
+  DesignerMasterStyle = 0
+  object paT: TPanel [0]
+    Align = Top
+    Size.Width = 1185.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    object paTL: TPanel
+      Align = FitLeft
+      Size.Width = 281.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object BindNavigator1: TBindNavigator
+        Size.Width = 276.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        VisibleButtons = [nbFirst, nbPrior, nbNext, nbLast, nbInsert, nbDelete, nbEdit, nbPost, nbCancel, nbRefresh, nbApplyUpdates, nbCancelUpdates]
+        xRadius = 4.000000000000000000
+        yRadius = 4.000000000000000000
+      end
+    end
+    object tcDB: TTabControl
+      Align = Client
+      Size.Width = 904.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      TabIndex = 1
+      TabOrder = 1
+      TabPosition = PlatformDefault
+      Sizes = (
+        904s
+        31s
+        904s
+        31s)
+      object tiDB: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 89.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = #1041#1072#1079#1072' '#1076#1072#1085#1085#1099#1093
+        ExplicitSize.cx = 89.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+      end
+      object tiSetup: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = True
+        Size.Width = 79.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = #1053#1072#1089#1090#1088#1086#1081#1082#1072
+        ExplicitSize.cx = 79.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+        object ToolBar1: TToolBar
+          Align = Client
+          Size.Width = 904.000000000000000000
+          Size.Height = 31.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+        end
+      end
+    end
+  end
+  object paStatus: TPanel [1]
+    Align = Bottom
+    Position.Y = 752.000000000000000000
+    Size.Width = 1185.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    object edDBStatus: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Left
+      TabOrder = 0
+      TabStop = False
+      Size.Width = 165.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object dsData: TDataSource
+    OnDataChange = dsDataDataChange
+    Left = 168
+    Top = 16
+  end
+end

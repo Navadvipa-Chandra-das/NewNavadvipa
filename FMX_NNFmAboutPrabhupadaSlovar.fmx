@@ -1,0 +1,153 @@
+inherited fmfAboutPrabhupadaSlovar: TfmfAboutPrabhupadaSlovar
+  Caption = #1054' '#1087#1088#1086#1075#1088#1072#1084#1084#1077
+  ClientWidth = 320
+  DesignerMasterStyle = 0
+  object laB: TLayout [0]
+    Align = Bottom
+    Position.Y = 430.000000000000000000
+    Size.Width = 320.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object buClose: TButton
+      Align = Center
+      Default = True
+      Size.Width = 197.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = #1047#1072#1082#1088#1099#1090#1100
+      OnClick = buCloseClick
+    end
+  end
+  object laC: TLayout [1]
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 430.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object tcPrabhupadaAbout: TTabControl
+      Align = Client
+      Size.Width = 320.000000000000000000
+      Size.Height = 430.000000000000000000
+      Size.PlatformDefault = False
+      TabHeight = 49.000000000000000000
+      TabIndex = 2
+      TabOrder = 0
+      TabPosition = PlatformDefault
+      Sizes = (
+        320s
+        381s
+        320s
+        381s
+        320s
+        381s
+        320s
+        381s)
+      object tiPrabhupadaPhoto: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        ImageIndex = 41
+        Size.Width = 166.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = #1064#1088#1080#1083#1072' '#1055#1088#1072#1073#1093#1091#1087#1072#1076#1072' - '#1092#1086#1090#1086
+        ExplicitSize.cx = 79.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        object icPrabhupada: TImageControl
+          Align = Client
+          Size.Width = 320.000000000000000000
+          Size.Height = 381.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+        end
+      end
+      object tiPrabhupadaLila: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        ImageIndex = 188
+        Size.Width = 199.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = #1064#1088#1080#1083#1072' '#1055#1088#1072#1073#1093#1091#1087#1072#1076#1072' - '#1073#1080#1086#1075#1088#1072#1092#1080#1103
+        ExplicitSize.cx = 79.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        object mePrabhupadaLila: TMemo
+          Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+          DataDetectorTypes = []
+          Align = Client
+          Size.Width = 320.000000000000000000
+          Size.Height = 381.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Viewport.Width = 320.000000000000000000
+          Viewport.Height = 381.000000000000000000
+        end
+      end
+      object tiHelp: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = True
+        ImageIndex = 135
+        Size.Width = 67.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = #1055#1086#1084#1086#1097#1100
+        ExplicitSize.cx = 79.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        object meHelp: TMemo
+          Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+          DataDetectorTypes = []
+          Align = Client
+          Size.Width = 320.000000000000000000
+          Size.Height = 381.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Viewport.Width = 316.000000000000000000
+          Viewport.Height = 377.000000000000000000
+        end
+      end
+      object tiLetter: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        ImageIndex = 10
+        Size.Width = 63.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = #1055#1080#1089#1100#1084#1086
+        ExplicitSize.cx = 81.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        object meLetter: TMemo
+          Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+          DataDetectorTypes = []
+          Align = Client
+          Size.Width = 320.000000000000000000
+          Size.Height = 381.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Viewport.Width = 320.000000000000000000
+          Viewport.Height = 381.000000000000000000
+        end
+      end
+    end
+  end
+  inherited coRes: TNNFConfig
+    StoreKind = skFile
+    OnDefault = coResDefault
+  end
+end

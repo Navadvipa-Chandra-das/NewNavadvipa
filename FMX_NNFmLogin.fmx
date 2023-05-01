@@ -1,0 +1,25 @@
+inherited fmfLogin: TfmfLogin
+  ActiveControl = frfLogin.edPassword
+  BorderStyle = Single
+  Caption = #1042#1093#1086#1076' '#1074' "'#1057#1083#1086#1074#1072#1088#1100' '#1055#1088#1072#1073#1093#1091#1087#1072#1076#1099'"'
+  ClientHeight = 237
+  ClientWidth = 345
+  OnKeyDown = FormKeyDown
+  DesignerMasterStyle = 0
+  inline frfLogin: TfrfLogin [0]
+    Size.Width = 345.000000000000000000
+    Size.Height = 237.000000000000000000
+    Size.PlatformDefault = False
+  end
+  inherited coRes: TNNFConfig [1]
+    StoreKind = skFile
+    StaticRegistryKey = 'PrabhupadaLogin.ini'
+    UseUserNameInRegistryKey = False
+  end
+  inherited fbRes: TNNFFlagBox [2]
+  end
+  inherited rrRes: TNNFRight [3]
+  end
+  inherited lnRes: TNNFLanguage [4]
+  end
+end
