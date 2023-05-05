@@ -30,3 +30,23 @@
 *.exe
 *.out
 *.app
+
+
+# no copy
+*.[oa]
+*.dcu
+*~
+*.ilc
+*.ild
+*.ilf
+*.ils
+*.map
+*.tds
+
+Pamyatka.sql
+NewNavadvipa.sql
+/Win32/*.*
+/Arhive/*.*
+./__astcache/*.*
+/__astcache/*.*
+__astcache/

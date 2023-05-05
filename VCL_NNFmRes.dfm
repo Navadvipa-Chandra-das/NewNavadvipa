@@ -2,8 +2,8 @@ object fmvRes: TfmvRes
   Left = 0
   Top = 0
   Caption = 'fmvRes'
-  ClientHeight = 281
-  ClientWidth = 418
+  ClientHeight = 279
+  ClientWidth = 410
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -11,7 +11,6 @@ object fmvRes: TfmvRes
   Font.Name = 'Tahoma'
   Font.Style = []
   KeyPreview = True
-  OldCreateOrder = False
   ShowHint = True
   OnActivate = FormActivate
   OnClose = FormClose
@@ -21,7 +20,6 @@ object fmvRes: TfmvRes
   OnDeactivate = FormDeactivate
   OnKeyDown = FormKeyDown
   OnMouseDown = FormMouseDown
-  PixelsPerInch = 96
   TextHeight = 13
   object fbRes: TNNVFlagBox
     Left = 84

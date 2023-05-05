@@ -133,7 +133,7 @@ void __fastcall TNNVComboBoxDateTime::KeyDown( Word &Key, Classes::TShiftState S
     TextToDateTime();
     break;
   default :
-    inherited::KeyDown( Key, Shift );
+                                               inherited::KeyDown( Key, Shift );
   }
 }
 
@@ -247,8 +247,13 @@ void __fastcall TNNVComboBoxDateTime::TextToDateTime()
 {
   if ( TextEmptyDate() )
     IsEmpty = true;
-  else
-    DateTime = StrToDateTime( Text );
+  else {
+    String P = NNV::PrefixCheckStyleValue( CheckStyle );
+    int B = P.Length() / 2
+      , C = Text.Length() - B;
+    String S = Text.SubString( B + 1, C );
+    DateTime = StrToDateTime( S );
+  }
 }
 
 void __fastcall TNNVComboBoxDateTime::CMExit( TCMExit &Message )
