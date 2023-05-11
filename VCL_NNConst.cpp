@@ -8,8 +8,8 @@
 
 namespace NNVConst {
 
-const char *PRABHUPADA_SCHEMA = "PRABHUPADA_SCHEMA";
-const char *PrabhupadaSchemaDefault = "\"NewNavadvipa\".";
+const char* PRABHUPADA_SCHEMA = "PRABHUPADA_SCHEMA";
+const char* PrabhupadaSchemaDefault = "\"NewNavadvipa\".";
 
 int MainLanguageIndex;
 const int MainLanguageID = 1;

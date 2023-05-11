@@ -1,5 +1,4 @@
 inherited dmvNewNavadvipa: TdmvNewNavadvipa
-  OldCreateOrder = True
   Height = 275
   Width = 526
   inherited coData: TNNVConfig
@@ -7458,31 +7457,31 @@ inherited dmvNewNavadvipa: TdmvNewNavadvipa
       object quUsersAnketaFIO: TWideStringField
         DisplayLabel = #1060#1072#1084#1080#1083#1080#1103' '#1048#1084#1103' '#1054#1090#1095#1077#1089#1090#1074#1086
         FieldName = 'FIO'
-        Origin = '"FIO"'
+        Origin = '"fio"'
         Size = 100
       end
       object quUsersAnketaINN: TWideStringField
         DisplayLabel = #1048#1085#1076#1080#1074#1080#1076#1091#1072#1083#1100#1085#1099#1081' '#1085#1072#1083#1086#1075#1086#1074#1099#1081' '#1085#1086#1084#1077#1088
         FieldName = 'INN'
-        Origin = '"INN"'
+        Origin = '"inn"'
         Size = 12
       end
       object quUsersAnketaPassport: TWideStringField
         DisplayLabel = #1055#1072#1089#1087#1086#1088#1090
         FieldName = 'Passport'
-        Origin = '"Passport"'
+        Origin = '"passport"'
         Size = 12
       end
       object quUsersAnketaPassportKemVydan: TWideStringField
         DisplayLabel = #1050#1077#1084' '#1074#1099#1076#1072#1085' '#1087#1072#1089#1087#1086#1088#1090
         FieldName = 'PassportKemVydan'
-        Origin = '"PassportKemVydan"'
+        Origin = '"passportkemvydan"'
         Size = 50
       end
       object quUsersAnketaPassportDate: TDateField
         DisplayLabel = #1044#1072#1090#1072' '#1074#1099#1076#1072#1095#1080' '#1087#1072#1089#1087#1086#1088#1090#1072
         FieldName = 'PassportDate'
-        Origin = '"PassportDate"'
+        Origin = '"passportdate"'
         OnSetText = ClearDateSetText
       end
     end

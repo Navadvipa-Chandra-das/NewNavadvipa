@@ -218,9 +218,11 @@ void __fastcall TdmvNewNavadvipa::ChangePassword( TComponent *ASenderForm )
 
 void __fastcall TdmvNewNavadvipa::SetIsDeletedUser( bool AIsDeleted )
 {
-  quUsers->Edit();
-  quUsersIsDeleted->AsBoolean = AIsDeleted;
-  quUsers->Post();
+  if ( quUsersIsDeleted->AsBoolean != AIsDeleted ) {
+    quUsers->Edit();
+    quUsersIsDeleted->AsBoolean = AIsDeleted;
+    quUsers->Post();
+  }
 }
 
 void __fastcall TdmvNewNavadvipa::SetNodeParamsCommodKind( TNNVNodeParams &NodeParams )

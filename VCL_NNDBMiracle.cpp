@@ -2233,7 +2233,8 @@ void __fastcall TNNVFilter::FilterEvent( TDataSet *DataSet, bool &Accept )
 }
 
 TNNVFilterMap::TNNVFilterMap( TNNVQuery *DSet )
-  : DataSet( DSet )
+  : inherited()
+  , DataSet( DSet )
 {
   if ( !DataSet->ComponentState.Contains( csDesigning ) )
     DataSet->OnFilterRecord = FilterEvent;
@@ -2463,10 +2464,11 @@ void __fastcall TNNVQuery::DBPaste( NNV::TBufferIntBox &ABufferIntBox, TNNVQuery
     return;
 
   QU->ClearAll();
-  QU->SQL->Text = L"call " + PasteProcedure + "( :ANewID, :AVectorID, :IsCut );";
+  QU->SQL->Text = L"call &" + String( NNVConst::PRABHUPADA_SCHEMA ) + PasteProcedure + "( :ANewID, :AVectorID, :IsCut );";
 
   QU->DeclareAndSetParam( "ANewID", F->AsLargeInt );
   QU->DeclareAndSetParam( "IsCut", ABufferIntBox.IsCut );
+  QU->PrepareStandartMacros();
 
   TFDParam *P = QU->ParamByName( "AVectorID" );
 
@@ -2488,7 +2490,7 @@ void __fastcall TNNVQuery::DBMerge( NNV::TBufferIntBox &ABufferIntBox, TNNVQuery
     return;
 
   QU->ClearAll();
-  QU->SQL->Text = L"call " + MergeProcedure + "( :ANewID, :AVectorID );";
+  QU->SQL->Text = L"call &" + String( NNVConst::PRABHUPADA_SCHEMA ) + MergeProcedure + "( :ANewID, :AVectorID );";
 
   QU->DeclareAndSetParam( "ANewID", F->AsLargeInt );
 

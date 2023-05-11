@@ -7,8 +7,8 @@
 
 namespace NNVConst {
 
-extern PACKAGE const char *PRABHUPADA_SCHEMA;
-extern PACKAGE const char *PrabhupadaSchemaDefault;
+extern PACKAGE const char* PRABHUPADA_SCHEMA;
+extern PACKAGE const char* PrabhupadaSchemaDefault;
 
 extern PACKAGE int MainLanguageIndex;
 extern PACKAGE const int MainLanguageID;
